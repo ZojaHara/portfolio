@@ -1,0 +1,131 @@
+		@media all and (orientation: portrait) {
+			.hello {
+				margin-top:25vmin;
+			}
+
+			.presentation p {
+				padding-bottom:5px;
+			}
+
+			/*Title section figures params*/
+
+			.container-portrait {
+			  width: 95vmin;
+			  height: 95vmin;
+			  z-index: -1;
+			}
+
+			.container-title-color {
+			  background: rgb(207, 168, 162);
+			}
+
+			.container-title-color::before, .container-title-color::after {
+			  background: #e086d4;
+			}
+
+			.container-portrait::before, .container-portrait::after {
+			  display: none;
+			}
+
+
+				.square {
+				  width: 47.5vmin;
+				  height: 47.5vmin;
+				}
+
+				.square::before, .square::after {
+				  width: 1.2%;
+				  height: 67.165vmin;
+				}
+
+				.triangle {
+				  width: 33.59264498vmin;
+				  height: 33.59264498vmin;
+				}
+
+				.triangle:nth-child(2) {
+				  top: 6.9984677vmin;
+				  left: 30.70367751vmin;
+				}
+
+				.triangle:nth-child(2):hover {
+				  top: -16.79632249vmin;
+				}
+
+				.triangle:nth-child(3) {
+				  bottom: 6.9984677vmin;
+				  left: 30.70367751vmin;
+				}
+
+				.triangle:nth-child(3):hover {
+				  bottom: -16.79632249vmin;
+				}
+
+				.triangle:nth-child(4) {
+				  bottom: 30.70367751vmin;
+				  left: 6.9984677vmin;
+				}
+
+				.triangle:nth-child(4):hover {
+				    left:6.9984677vmin;
+				    z-index: 7;
+				}
+
+				.triangle:nth-child(5) {
+				  bottom: 30.70367751vmin;
+				  right: 6.9984677vmin;
+				}
+
+
+				.triangle:nth-child(5):hover {
+				    right:6.9984677vmin;
+				    z-index: 7;
+				}
+
+
+					.menu-list {
+						font-size: 4.5vmin;
+					}
+
+
+
+/*End of the title section figures params */
+
+
+/* Skills section modifications*/
+
+
+
+			.skills-arrow:nth-of-type(5) {
+				display: none;
+			}
+
+			.skills-arrow:nth-of-type(6){
+				display: none;
+			}
+
+			.skills-click {
+				top:48%;
+			}
+
+
+
+
+
+			.scene {
+				display: none;
+			}
+
+			.contact-data:nth-of-type(3) {
+				right:13.5%;
+			}
+		}
+
+
+
+		@media all and (min-width: 1281px) {
+			.bxslider-position img {
+				min-width:100%;
+			}
+		}
+
