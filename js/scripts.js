@@ -1,11 +1,11 @@
 ;(function($) {
 
-	$(document).ready(function() { 
- 
+	$(document).ready(function() {
+
  		$('.jsScroll').on('click', function(event) {
- 
+
  		var target = $( $(this).attr('href') );
- 
+
  			if( target.length ) {
  				event.preventDefault();
  				$('html, body').animate({
@@ -13,9 +13,9 @@
  			}, 700);
  		}
  	});
- 
+
 });
- 
+
 
 
 	$(".close-cross").on("click", function() {
@@ -46,7 +46,3 @@
 	});
 
 })(jQuery);
-
-
-
-
