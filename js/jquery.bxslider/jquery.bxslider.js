@@ -203,7 +203,7 @@
 				slider.settings.easing = 'swing';
 			}
 			var slidesShowing = getNumberSlidesShowing();
-			// make modifications to the viewport (.bx-viewport)
+			// make modifications to the viewport (.bx-viewport) done(me!)
 			slider.viewport.css({
 				width: '99%',
 				overflow: 'hidden',
