@@ -707,11 +707,10 @@ section {
 		width: 100%;
 		height: 100%;
 	}
-	.projects-slider {
-		width:70%;
-		margin:auto;
-
-	}
+		.projects-slider {
+			width:70%;
+			margin:auto;
+		}
 
 /*Projects arrow */
 		.arrow-container {
