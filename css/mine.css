@@ -584,11 +584,6 @@ section {
 		animation-play-state: paused;
 	}
 
-/*	.running {
-		-webkit-animation-play-state: running ;
-		animation-play-state: running ;
-	}*/
-
 
 		.skills-details {
 			position: absolute;
