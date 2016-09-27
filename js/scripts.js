@@ -34,6 +34,11 @@
 
 	$(".skills-container").on("click", function() {
 		$(this).toggleClass("paused").addClass("skills-container-animation");
+		//IE bug fix
+		$(".skills-details").each(function() {
+			$(this).toggleClass("paused").addClass("skills-container-animation");
+		});
+
 	});
 
 	$(".skills-arrow:nth-child(6)").on("click", function() {
