@@ -45,7 +45,7 @@
 		$(".skills-container").removeClass("paused").removeClass("skills-container-animation-2").addClass("skills-container-animation");
 		//IE bug fix
 		$(".skills-details").each(function() {
-			$(this).toggleClass("paused").addClass("skills-container-animation");
+			$(this).removeClass("paused").removeClass("skills-container-animation-2").addClass("skills-container-animation");
 		});
 	});
 
@@ -53,7 +53,7 @@
 		$(".skills-container").removeClass("paused").removeClass("skills-container-animation").addClass("skills-container-animation-2");
 		//IE bug fix
 		$(".skills-details").each(function() {
-			$(this).toggleClass("paused").addClass("skills-container-animation");
+			$(this).removeClass("paused").removeClass("skills-container-animation").addClass("skills-container-animation-2");
 		});
 	});
 

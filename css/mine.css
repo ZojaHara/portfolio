@@ -670,6 +670,8 @@ section {
 	-webkit-animation-fill-mode: forwards;
 	animation-fill-mode: forwards;
 }
+
+/*Class to fix some IE issues*/
 .p-flex {
 	display:flex;
 	align-items: center;
