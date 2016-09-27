@@ -555,8 +555,8 @@ section {
 		margin:auto;
 		position: relative;
 		border-radius: 50%;
-		-webkit-transform-origin: 50% 45vmin;
-		transform-origin: 50% 45vmin;
+		/*-webkit-transform-origin: 50% 45vmin;
+		transform-origin: 50% 45vmin;*/
 		cursor: pointer;
 	}
 
@@ -704,7 +704,7 @@ section {
 
 
 	.slider-wrapper {
-		max-width: 99%;
+		width: 100%;
 		height: 100%;
 	}
 		.projects-slider {

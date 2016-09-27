@@ -85,7 +85,7 @@
 		onSlideNext: function() {},
 		onSlidePrev: function() {},
 		onSliderResize: function() {}
-	}
+	};
 
 	$.fn.bxSlider = function(options){
 
@@ -205,7 +205,7 @@
 			var slidesShowing = getNumberSlidesShowing();
 			// make modifications to the viewport (.bx-viewport) done(me!)
 			slider.viewport.css({
-				width: '99%',
+				width: '100%',
 				overflow: 'hidden',
 				position: 'relative'
 			});

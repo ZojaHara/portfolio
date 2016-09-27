@@ -32,8 +32,7 @@
 
 	//Cricles animation
 
-	$(".skills-container").on("click", function(e) {
-		e.preventDefault;
+	$(".skills-container").on("click", function() {
 		$(this).toggleClass("paused").addClass("skills-container-animation");
 	});
 
