@@ -384,7 +384,7 @@
 		 * Returns the calculated width to be used for the outer wrapper / viewport
 		 */
 		var getViewportMaxWidth = function(){
-			var width = '100%';
+			var width = '99%';
 			if(slider.settings.slideWidth > 0){
 				if(slider.settings.mode == 'horizontal'){
 					width = (slider.settings.maxSlides * slider.settings.slideWidth) + ((slider.settings.maxSlides - 1) * slider.settings.slideMargin);
