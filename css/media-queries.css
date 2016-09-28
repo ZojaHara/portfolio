@@ -12,7 +12,6 @@
 			.container-portrait {
 			  width: 95vmin;
 			  height: 95vmin;
-			  z-index: -1;
 			}
 
 			.container-title-color {

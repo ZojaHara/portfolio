@@ -26,15 +26,14 @@ html {overflow-x:hidden;}
 body {
 	background:rgb(207,168,162);
 	position: relative;
-	z-index: 1;
 	font-size: 16px;
 	font-family: 'Orbitron', sans-serif;
 	overflow-x:hidden;
 }
 
-.overflow-y {
+/*.overflow-y {
 	overflow-y:hidden;
-}
+}*/
 
 section {
 	position: relative;
@@ -102,7 +101,7 @@ section {
 		.hello {
 			width:0;
 			margin:10vmin 5vmin 5vmin 0vmin;
-			padding:2px 0;
+			padding:6px 1px;
 			white-space: nowrap;
 			overflow: hidden;
 			text-align: center;
@@ -227,9 +226,6 @@ section {
 		}
 
 		/*Section - Title*/
-	.title {
-		z-index: 2;
-	}
 
 			.paragraph {
 				position:absolute;
@@ -468,7 +464,6 @@ section {
 
 
 .skills {
-	z-index: 2;
 	background: rgb(240,210,210);
 }
 
@@ -583,6 +578,7 @@ section {
 		-webkit-animation-play-state: paused;
 		animation-play-state: paused;
 	}
+
 
 
 		.skills-details {
