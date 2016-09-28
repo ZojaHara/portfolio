@@ -31,9 +31,6 @@ body {
 	overflow-x:hidden;
 }
 
-/*.overflow-y {
-	overflow-y:hidden;
-}*/
 
 section {
 	position: relative;
@@ -818,19 +815,19 @@ section {
 	}
 
 	.container-contact-color::before {
-		border-right:.3px dashed rgb(80, 0, 0);
-		border-top:.3px dashed rgb(80, 0, 0);
+		border-right:.3px dashed rgb(30, 0, 0);
+		border-top:.3px dashed rgb(30, 0, 0);
 	}
 
 	.container-contact-color::after {
-		border-left:.3px dashed rgb(80, 0, 0);
-		border-bottom:.3px dashed rgb(80, 0, 0);
+		border-left:.3px dashed rgb(30, 0, 0);
+		border-bottom:.3px dashed rgb(30, 0, 0);
 	}
 
 
 		.contact-data {
 			font-size: 4vmin;
-			color:rgb(80, 0, 0)rgb(80, 0, 0);
+			color:rgb(30, 0, 0);
 			position: absolute;
 			z-index:7;
 		}
@@ -858,110 +855,51 @@ section {
 
 
 
-			/*Cube*/
+			/*Contact figure*/
 
 .scene {
   width: 25vmin;
   height: 25vmin;
-  -webkit-perspective: 600px;
-  perspective: 600px;
   position:absolute;
-  top:32%;
-  left:-18%;
-  z-index: 5;
+  top:34%;
+  left:-6%;
 }
 
-.cube {
-  position: relative;
-  width: inherit;
-  height: inherit;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  -webkit-animation: cube-rotation 6s linear infinite;
-  animation: cube-rotation 6s linear infinite;
+.scene::before, .scene::after {
+	content:"";
+	display: block;
+	z-index: 6;
+	border:2px solid rgb(20, 0, 0);
+	position: absolute;
+	height: inherit;
+	width: 57%;
+	border-radius: 30px;
+	-webkit-transform-origin: bottom center;
+	transform-origin: bottom center;
 }
 
-.cube-face {
-  width: inherit;
-  height: inherit;
-  position: absolute;
-  background: rgb(245,214,154);
-  opacity: 0.5;
-  display: flex;
+.scene::before {
+	left:0;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	background: rgba(40,125,176,.5);
 }
 
-.cube-face-front {
-  background: rgb(117,93,86);
-  -webkit-transform: translate3d(0, 0, 12.5vmin);
-  transform: translate3d(0, 0, 12.5vmin);
+.scene::after {
+	right:0;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	background: rgba(117,93,86,.5);
 }
 
-.cube-face-back {
-  background: rgb(40,125,176);
-  -webkit-transform: rotateY(180deg) translate3d(0, 0, 12.5vmin);
-  transform: rotateY(180deg) translate3d(0, 0, 12.5vmin);
-}
-
-.cube-face-left {
-  background: rgb(180,241,212);
-  -webkit-transform: rotateY(-90deg) translate3d(0, 0, 12.5vmin);
-  transform: rotateY(-90deg) translate3d(0, 0, 12.5vmin);
-}
-
-.cube-face-right {
-  background: rgb(224,134,212);
-  -webkit-transform: rotateY(90deg) translate3d(0, 0, 12.5vmin);
-  transform: rotateY(90deg) translate3d(0, 0, 12.5vmin);
-}
-
-.cube-face-top {
-  background: rgb(150,150,219);
-  -webkit-transform: rotateX(90deg) translate3d(0, 0, 12.5vmin);
-  transform: rotateX(90deg) translate3d(0, 0, 12.5vmin);
-}
-
-.cube-face-bottom {
-  background: rgb(150,178,193);
-  -webkit-transform: rotateX(-90deg) translate3d(0, 0, 12.5vmin);
-  transform: rotateX(-90deg) translate3d(0, 0, 12.5vmin);
-}
-
-@-webkit-keyframes cube-rotation {
-  0% {
-    -webkit-transform: rotateX(125deg) rotateY(0deg);
-    transform: rotateX(125deg) rotateY(0deg);
-  }
-  50% {
-    -webkit-transform: rotateX(150deg) rotateY(180deg);
-    transform: rotateX(150deg) rotateY(180deg);
-  }
-  100% {
-    -webkit-transform: rotateX(170deg) rotateY(360deg);
-    transform: rotateX(125deg) rotateY(360deg);
-  }
-}
-
-@keyframes cube-rotation {
-  0% {
-    -webkit-transform: rotateX(125deg) rotateY(0deg);
-    transform: rotateX(125deg) rotateY(0deg);
-  }
-  50% {
-    -webkit-transform: rotateX(150deg) rotateY(180deg);
-    transform: rotateX(150deg) rotateY(180deg);
-  }
-  100% {
-    -webkit-transform: rotateX(170deg) rotateY(360deg);
-    transform: rotateX(125deg) rotateY(360deg);
-  }
-}
-
-
-	.cube-letter {
-	/*	position:absolute;
-		top:30%;
-		left:40%;*/
-		margin:auto;
-		font-size: 8vmin;
-		color:rgb(80, 0, 0);
+	.scene-circle {
+		width: 50%;
+		height:50%;
+		position: absolute;
+		top:40%;
+		left:24%;
+		background: rgb(207,120,162);
+		border:2px solid black;
+		border-radius:50%;
+		z-index: 7;
 	}
