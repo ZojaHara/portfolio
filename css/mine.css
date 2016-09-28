@@ -59,6 +59,7 @@ section {
 			height: 0;
 			border-style: solid;
 			position:absolute;
+			z-index: 4;
 		}
 		.corner:nth-child(2) {
 			border-color: rgba(117,93,86,.7) transparent transparent transparent;
@@ -231,6 +232,7 @@ section {
 				position:absolute;
 				color:rgb(0,0,0);
 				font-size: 5vmin;
+				z-index: 4;
 			}
 
 			.paragraph-1 {
