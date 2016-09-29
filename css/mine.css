@@ -549,8 +549,7 @@ section {
 		margin:auto;
 		position: relative;
 		border-radius: 50%;
-		/*-webkit-transform-origin: 50% 45vmin;
-		transform-origin: 50% 45vmin;*/
+		z-index: 3;
 		cursor: pointer;
 	}
 
