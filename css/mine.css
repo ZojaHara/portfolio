@@ -1,16 +1,4 @@
-.vertical-centering {
-	margin: 50vh auto 0;
-	-ms-transform: translateY(-50%);
-	-webkit-transform: translateY(-50%);
-	transform: translateY(-50%);
-}
-
-    .floatfix:after {
-        content:'';
-        display:block;
-        clear:both;
- 	}
-
+/*General rules*/
 .hidden {
 	text-indent:-99999999999em;
 	height:0px;
