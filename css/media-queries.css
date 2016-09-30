@@ -117,32 +117,11 @@
 				right:13.5%;
 			}
 
-												/*slider parameters*/
-
-			/*.projects-slider {
-				margin:35% auto 0;
-			}*/
 
 		}
 
 
-		/*@media all and (orientation: landscape) and (min-width:701px) and (max-width: 1281px) {
-			.projects-slider {
-				margin:15% auto 0;
-			}
-		}
-
-
-		@media all and (orientation: landscape) and (max-width: 700px) {
-			.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
-    		bottom: -35px !important;
-			}
-
-			.projects-slider {
-				margin:7.5% auto 0;
-			}
-
-		}*/
+/*Bx-slider*/
 
 		@media all and (orientation: landscape) and (max-width: 750px) {
 			.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
