@@ -1,4 +1,5 @@
 /*General rules*/
+
 .hidden {
 	text-indent:-99999999999em;
 	height:0px;
@@ -12,7 +13,7 @@ a {
 html {overflow-x:hidden;}
 
 body {
-	background:rgb(207,168,162);
+	background:rgb(184,205,205);
 	position: relative;
 	font-size: 16px;
 	font-family: 'Orbitron', sans-serif;
@@ -22,7 +23,6 @@ body {
 
 section {
 	position: relative;
-	width: 100vw;
 	height: 100vh;
 }
 
@@ -78,6 +78,7 @@ section {
 		/*Section - About me*/
 
 	.about-me, .loader {
+		width: 100vw;
 		position: absolute;
 		z-index: 9999999;
 		background: rgba(0,0,0,.9);
@@ -267,11 +268,12 @@ section {
 			}
 
 			.container-title-color {
-			  background: #f5d69a;
+			  background: rgb(200,240,250);
 			}
 
 			.container-title-color::before, .container-title-color::after {
-			  background: #e086d4;
+			  /*background: #e086d4;*/
+				background: rgb(156,131,141);
 			}
 
 			.container::before, .container::after {
@@ -310,7 +312,7 @@ section {
 				  position: absolute;
 				  -webkit-transform-origin: top;
 				  transform-origin: top;
-				  background: #500000;
+				  background: rgb(117,93,86);
 				  border-radius: 50%;
 				}
 
@@ -334,7 +336,7 @@ section {
 				  -webkit-transform: rotate(45deg);
 				  transform: rotate(45deg);
 				  transition: all 1.3s;
-				  background: #500000;
+				  background: rgb(117,93,86);
 				}
 
 				.triangle:nth-child(2) {
@@ -376,7 +378,7 @@ section {
 					.menu-list {
 						display:block;
 						font-size: 3.5vmin;
-						color:rgb(245,214,154);
+						color:rgb(248,241,212);
 						text-decoration: none;
 						position: absolute;
 						transition:all 1.3s;
@@ -473,7 +475,7 @@ section {
 	}
 
 	.skills-arrow:nth-of-type(6){
-		right:3%;
+		right:2%;
 	}
 
 
@@ -793,7 +795,8 @@ section {
 			/*Contact section*/
 
 .contact {
-	background: rgb(207,120,162);
+	/*background: rgb(207,120,162);*/
+	background: inherit;
 }
 
 
@@ -885,7 +888,7 @@ section {
 		position: absolute;
 		top:40%;
 		left:24%;
-		background: rgb(207,120,162);
+		background: rgb(19,150,180);
 		border:2px solid black;
 		border-radius:50%;
 		z-index: 7;

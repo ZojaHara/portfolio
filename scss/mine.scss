@@ -1,4 +1,4 @@
-// Title section figures 
+// Title section figures
 
       $width1:80vmin;
 
@@ -18,11 +18,12 @@
     }
 
     .container-title-color {
-      background: rgb(245,214,154);
+      background: rgb(200,240,250);
     }
 
     .container-title-color::before, .container-title-color::after {
-      background:rgb(224,134,212);
+      // background:rgb(224,134,212);
+      background: rgb(156,131,141);
     }
 
     .container::before, .container::after {
@@ -60,7 +61,7 @@
           position:absolute;
           -webkit-transform-origin:top;
           transform-origin:top;
-          background:rgb(80,0,0);
+          background:rgb(117,93,86);
           border-radius: 50%;
         }
 
@@ -85,7 +86,7 @@
           -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
           transition:all 1.3s;
-          background: rgb(80,0,0);
+          background: rgb(117,93,86);
         }
 
         .triangle:nth-child(2) {
