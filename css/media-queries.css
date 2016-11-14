@@ -1,4 +1,8 @@
 		@media all and (orientation: portrait) {
+
+			body {
+				background: rgb(207, 168, 162);
+			}
 			.hello {
 				margin-top:25vmin;
 			}
