@@ -88,7 +88,7 @@ section {
 		.hello {
 			width:0;
 			margin:10vmin 5vmin 5vmin 0vmin;
-			padding:6px 1px;
+			padding:8px 1px;
 			white-space: nowrap;
 			overflow: hidden;
 			text-align: center;
@@ -164,6 +164,7 @@ section {
 			.presentation-contact {
 				display: inline-block;
 				color:rgb(177,255,200);
+				padding:5px;
 			}
 
 			.presentation-contact::after {
@@ -336,7 +337,7 @@ section {
 				  -webkit-transform: rotate(45deg);
 				  transform: rotate(45deg);
 				  transition: all 1.3s;
-				  background: rgb(117,93,86);
+				  background: rgb(114,76,65);
 				}
 
 				.triangle:nth-child(2) {
