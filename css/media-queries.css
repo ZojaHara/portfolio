@@ -1,4 +1,8 @@
 		@media all and (orientation: portrait) {
+
+			body {
+				background: rgb(207, 168, 162);
+			}
 			.hello {
 				margin-top:25vmin;
 			}
@@ -47,18 +51,18 @@
 				  left: 30.70367751vmin;
 				}
 
-				.triangle:nth-child(2):hover {
+				/*.triangle:nth-child(2):hover {
 				  top: -16.79632249vmin;
-				}
+				}*/
 
 				.triangle:nth-child(3) {
 				  bottom: 6.9984677vmin;
 				  left: 30.70367751vmin;
 				}
 
-				.triangle:nth-child(3):hover {
+				/*.triangle:nth-child(3):hover {
 				  bottom: -16.79632249vmin;
-				}
+				}*/
 
 				.triangle:nth-child(4) {
 				  bottom: 30.70367751vmin;
