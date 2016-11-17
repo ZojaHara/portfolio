@@ -88,7 +88,7 @@ section {
 		.hello {
 			width:0;
 			margin:10vmin 5vmin 5vmin 0vmin;
-			padding:6px 1px;
+			padding:8px 1px;
 			white-space: nowrap;
 			overflow: hidden;
 			text-align: center;
@@ -164,6 +164,7 @@ section {
 			.presentation-contact {
 				display: inline-block;
 				color:rgb(177,255,200);
+				padding:5px;
 			}
 
 			.presentation-contact::after {
@@ -345,7 +346,8 @@ section {
 				}
 
 				.triangle:nth-child(2):hover {
-				  top: -13.26025vmin;
+				  /*top: -13.26025vmin;*/
+					z-index: 7;
 				}
 
 				.triangle:nth-child(3) {
@@ -354,7 +356,8 @@ section {
 				}
 
 				.triangle:nth-child(3):hover {
-				  bottom: -13.26025vmin;
+				  /*bottom: -13.26025vmin;*/
+					z-index: 7;
 				}
 
 				.triangle:nth-child(4) {
