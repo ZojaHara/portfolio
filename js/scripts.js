@@ -18,15 +18,8 @@
 
 
 
-	$(".close-cross").on("click", function() {
+	$(".close-cross, .presentation-contact").on("click", function() {
 		$(".about-me").slideUp(1000);
-		$("body").removeClass("overflow-y");
-	});
-
-
-	$(".presentation-contact").on("click", function() {
-		$("body").removeClass("overflow-y");
-		$(".about-me").slideUp(100);
 	});
 
 
