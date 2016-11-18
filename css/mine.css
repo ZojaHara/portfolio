@@ -10,7 +10,7 @@ a {
 	text-decoration: none;
 }
 
-html {overflow-x:hidden;}
+html {overflow:hidden;}
 
 body {
 	background:rgb(184,205,205);
@@ -74,16 +74,47 @@ section {
 			right:0;
 		}
 
+		/*Hamburger menu*/
+
+		.hamburger, .hamburger::before, .hamburger::after {
+			position: absolute;
+			top:7vmin;
+			right:-30vmin;
+			width:9vmin;
+			height:1.3vmin;
+			background: rgb(240,210,210);
+			border-radius:10px;
+			cursor: pointer;
+		}
+		/*.hamburger {
+			top:7vmin;
+		}*/
+
+		.hamburger::before, .hamburger::after {
+			content:"";
+			display: block;
+			right:0;
+		}
+
+		.hamburger::before {
+			top:2vmin;
+		}
+		.hamburger::after {
+			top:-2vmin;
+		}
+
+    /*Pop-up sections*/
+
+		.about-me, .loader, .popup_menu {
+			width: 100vw;
+			position: absolute;
+			z-index: 9999999;
+			background: rgba(0,0,0,.9);
+			font-size: 6vmin;
+		}
 
 		/*Section - About me*/
 
-	.about-me, .loader {
-		width: 100vw;
-		position: absolute;
-		z-index: 9999999;
-		background: rgba(0,0,0,.9);
-		font-size: 6vmin;
-	}
 
 		.hello {
 			width:0;
@@ -450,6 +481,75 @@ section {
 
 
 	/*Section no 2 - About me*/
+
+
+
+	/*Section pop-up menu*/
+	/*.popup_position {
+		top:-400vh;
+	}*/
+
+	.arrow-popup {
+		width:30vmin;
+		height:40vmin;
+		position: absolute;
+		left:calc(50% - 15vmin);
+	}
+
+	.arrow-popup_blue {
+		top:7vmin;
+	}
+
+	.arrow-popup_orange {
+		bottom:7vmin;
+		-webkit-transform:rotate(180deg);
+		transform:rotate(180deg);
+	}
+
+		.triangle-arrow, .triangle-arrow::before {
+			display: inline-block;
+			width: 0;
+			height: 0;
+			border-style: solid;
+
+			position: absolute;
+			left: calc(50% - 10vmin);
+			cursor:pointer;
+		}
+
+		@keyframes go-and-back {
+			50% {
+				bottom:20%;
+			}
+			100% {
+				bottom:0;
+			}
+		}
+
+		.triangle-arrow {
+			border-width: 0 10vmin 30vmin 10vmin;
+			bottom:0;
+			animation: go-and-back 2s linear infinite;
+		}
+
+		.triangle-arrow::before {
+			content: "";
+			border-width: 0 10vmin 10vmin 10vmin;
+			top:0vmin;
+		}
+
+		.triangle-arrow_blue, .triangle-arrow_blue::before {
+			border-color: transparent transparent rgb(39,82,196) transparent;
+		}
+
+		.triangle-arrow_orange, .triangle-arrow_orange::before {
+			border-color: transparent transparent rgb(204,131,94) transparent;
+		}
+
+
+
+
+	/*End of section pop-up menu*/
 
 
 	/*Section no 3 - Skills*/
