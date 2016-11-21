@@ -12,6 +12,7 @@
  				scrollTop: target.offset().top
  			}, 700);
  		}
+		$(".popup_menu").slideUp(300);
  	});
 
 });
@@ -23,8 +24,7 @@
 		$(".popup_menu").slideUp(700);
 	});
 
-	// $(".popup_menu").css({"height":0});
-	// $(".popup_menu").slideUp();
+
 	$(".hamburger").on("click", function() {
 		$(".popup_menu").slideDown(1000);
 	});

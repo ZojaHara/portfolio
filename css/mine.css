@@ -80,15 +80,21 @@ section {
 			position: absolute;
 			top:7vmin;
 			right:-30vmin;
-			width:9vmin;
-			height:1.3vmin;
-			background: rgb(240,210,210);
+			width:11vmin;
+			height:1.5vmin;
+			background: rgb(290,290,290);
 			border-radius:10px;
 			cursor: pointer;
+			animation: hamburger 6s infinite;
 		}
-		/*.hamburger {
-			top:7vmin;
-		}*/
+		@keyframes hamburger {
+			50% {
+				background: rgb(184,205,205);
+			}
+			100% {
+				background: rgb(290,290,290);
+			}
+		}
 
 		.hamburger::before, .hamburger::after {
 			content:"";
@@ -97,10 +103,10 @@ section {
 		}
 
 		.hamburger::before {
-			top:2vmin;
+			top:2.5vmin;
 		}
 		.hamburger::after {
-			top:-2vmin;
+			top:-2.5vmin;
 		}
 
     /*Pop-up sections*/
@@ -111,6 +117,10 @@ section {
 			z-index: 9999999;
 			background: rgba(0,0,0,.9);
 			font-size: 6vmin;
+		}
+
+		.popup_menu {
+			display: none;
 		}
 
 		/*Section - About me*/
@@ -506,6 +516,10 @@ section {
 		transform:rotate(180deg);
 	}
 
+	.arrow-popup_small {
+		bottom:7vmin;
+	}
+
 		.triangle-arrow, .triangle-arrow::before {
 			display: inline-block;
 			width: 0;
@@ -513,7 +527,6 @@ section {
 			border-style: solid;
 
 			position: absolute;
-			left: calc(50% - 10vmin);
 			cursor:pointer;
 		}
 
@@ -527,14 +540,31 @@ section {
 		}
 
 		.triangle-arrow {
-			border-width: 0 10vmin 30vmin 10vmin;
 			bottom:0;
 			animation: go-and-back 2s linear infinite;
 		}
 
-		.triangle-arrow::before {
+		.triangle-arrow_big {
+			border-width: 0 10vmin 30vmin 10vmin;
+			left: calc(50% - 10vmin);
+		}
+
+		.triangle-arrow_small {
+			border-width: 0 7vmin 21vmin 7vmin;
+			left: calc(50% - 7vmin);
+		}
+
+		.triangle-arrow_big::before {
 			content: "";
 			border-width: 0 10vmin 10vmin 10vmin;
+			left: calc(50% - 10vmin);
+			top:0vmin;
+		}
+
+		.triangle-arrow_small::before {
+			content: "";
+			border-width: 0 7vmin 7vmin 7vmin;
+			left: calc(50% - 7vmin);
 			top:0vmin;
 		}
 
