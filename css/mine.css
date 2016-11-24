@@ -76,23 +76,30 @@ section {
 
 		/*Hamburger menu*/
 
+		.hamburger-container {
+			width:11vmin;
+			height: 9.5vmin;
+			top:2.5vmin;
+			right:-30vmin;
+			position: absolute;
+			cursor: pointer;
+		}
+
 		.hamburger, .hamburger::before, .hamburger::after {
 			position: absolute;
-			top:7vmin;
-			right:-30vmin;
+			top:4vmin;
 			width:11vmin;
 			height:1.5vmin;
-			background: rgb(290,290,290);
+			background: rgb(255,240,255);
 			border-radius:10px;
-			cursor: pointer;
-			animation: hamburger 6s infinite;
+			animation: hamburger 6s infinite linear;
 		}
 		@keyframes hamburger {
 			50% {
-				background: rgb(184,205,205);
+				background: rgb(233, 202, 202);
 			}
 			100% {
-				background: rgb(290,290,290);
+				background: rgb(255,240,255);
 			}
 		}
 

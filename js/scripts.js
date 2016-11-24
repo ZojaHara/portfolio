@@ -25,7 +25,7 @@
 	});
 
 
-	$(".hamburger").on("click", function() {
+	$(".hamburger-container").on("click", function() {
 		$(".popup_menu").slideDown(1000);
 	});
 
