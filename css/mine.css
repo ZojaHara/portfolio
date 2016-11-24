@@ -92,15 +92,31 @@ section {
 			height:1.5vmin;
 			background: rgb(255,240,255);
 			border-radius:10px;
-			animation: hamburger 6s infinite linear;
 		}
-		@keyframes hamburger {
+		@keyframes hamburger-skills {
 			50% {
-				background: rgb(233, 202, 202);
+				background: rgb(233, 180, 202);
 			}
 			100% {
 				background: rgb(255,240,255);
 			}
+		}
+
+		.hamburger-skills {
+			animation: hamburger-skills 6s infinite linear;
+		}
+
+		@keyframes hamburger-contact {
+			50% {
+				background: rgb(184,205,205);
+			}
+			100% {
+				background: rgb(255,240,255);
+			}
+		}
+
+		.hamburger-contact {
+			animation: hamburger-contact 6s infinite linear;
 		}
 
 		.hamburger::before, .hamburger::after {
@@ -497,14 +513,8 @@ section {
 					}
 
 
-	/*Section no 2 - About me*/
-
-
-
 	/*Section pop-up menu*/
-	/*.popup_position {
-		top:-400vh;
-	}*/
+
 
 	.arrow-popup {
 		width:30vmin;
@@ -537,7 +547,7 @@ section {
 			cursor:pointer;
 		}
 
-		@keyframes go-and-back {
+		@keyframes there-and-back {
 			50% {
 				bottom:20%;
 			}
@@ -548,7 +558,7 @@ section {
 
 		.triangle-arrow {
 			bottom:0;
-			animation: go-and-back 2s linear infinite;
+			animation: there-and-back 2s linear infinite;
 		}
 
 		.triangle-arrow_big {
@@ -769,10 +779,6 @@ section {
 
 
 							/*Projects section*/
-
-.loader {
-
-}
 
 .load {
 	width:0;
