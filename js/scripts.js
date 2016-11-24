@@ -12,23 +12,22 @@
  				scrollTop: target.offset().top
  			}, 700);
  		}
+		$(".popup_menu").slideUp(300);
  	});
 
 });
 
 
 
-	$(".close-cross").on("click", function() {
+	$(".close-cross, .presentation-contact").on("click", function() {
 		$(".about-me").slideUp(1000);
-		$("body").removeClass("overflow-y");
+		$(".popup_menu").slideUp(700);
 	});
 
 
-	$(".presentation-contact").on("click", function() {
-		$("body").removeClass("overflow-y");
-		$(".about-me").slideUp(100);
+	$(".hamburger-container").on("click", function() {
+		$(".popup_menu").slideDown(1000);
 	});
-
 
 	//Cricles animation
 
