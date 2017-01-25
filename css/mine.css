@@ -402,6 +402,7 @@ section {
 				  transform: rotate(45deg);
 				  transition: all 1.3s;
 				  background: rgb(114,76,65);
+					overflow:hidden;
 				}
 
 				.triangle:nth-child(2) {
@@ -453,8 +454,8 @@ section {
 					.menu-list::before {
 						content: '';
 						position: absolute;
-						top: -15px; right: -15px;
-						bottom: -15px; left: -15px;
+						top: -350%; right: -350%;
+						bottom: -350%; left: -350%;
 					}
 
 					.menu-list-1 {
@@ -690,8 +691,15 @@ section {
 		position: relative;
 		border-radius: 50%;
 		z-index: 3;
-		cursor: pointer;
 	}
+
+	  .skills-container::before {
+			content:"";
+			position: absolute;
+			top: 20%; right: 20%;
+			bottom: 20%; left: 20%;
+			cursor:pointer;
+		}
 
 
 		@keyframes turning {
@@ -763,7 +771,7 @@ section {
 
 
 		.skills-details:nth-child(6) {
-			background:rgb(255,240,255);
+			background:rgb(136,136,136);
 			bottom:25%;
 			right:1%;
 		}
@@ -1032,7 +1040,7 @@ section {
 		width: 50%;
 		height:50%;
 		position: absolute;
-		top:40%;
+		top:39.5%;
 		left:24%;
 		background: rgb(19,150,180);
 		border:1px solid rgb(87, 81, 81);

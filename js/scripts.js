@@ -18,7 +18,6 @@
 });
 
 
-
 	$(".close-cross, .presentation-contact").on("click", function() {
 		$(".about-me").slideUp(1000);
 		$(".popup_menu").slideUp(700);
