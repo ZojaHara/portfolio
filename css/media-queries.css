@@ -124,6 +124,12 @@
 
 		}
 
+		@media all and (orientation:portrait) and (max-width: 1050px) {
+			.github-link {
+				right: 6%;
+			}
+		}
+
 
 /*Bx-slider*/
 
