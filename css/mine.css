@@ -922,22 +922,22 @@ section {
 		background:white;
 	}
 
-		.page-link, .github-link {
+		.slider-links {
 			display: block;
 			border:2px solid white;
 			color:white;
 			font-size: 6vmin;
 			position: absolute;
 			top:20%;
+			padding:3% 2%;
 		}
 
 		.page-link {
-			left:10%;
-			padding:3% 4%;
+			left:7.5%;
+			white-space: pre;
 		}
 		.github-link {
-			right:10%;
-			padding:3% 2%;
+			right:7.5%;
 		}
 
 
@@ -996,7 +996,7 @@ section {
 
 			/*Contact figure*/
 
-.scene {
+.figure {
   width: 25vmin;
   height: 25vmin;
   position:absolute;
@@ -1004,7 +1004,7 @@ section {
   left:-6%;
 }
 
-.scene::before, .scene::after {
+.figure::before, .figure::after {
 	content:"";
 	display: block;
 	z-index: 6;
@@ -1017,21 +1017,21 @@ section {
 	transform-origin: bottom center;
 }
 
-.scene::before {
+.figure::before {
 	left:0;
 	-webkit-transform: rotate(45deg);
 	transform: rotate(45deg);
 	background: rgba(40,125,176,.5);
 }
 
-.scene::after {
+.figure::after {
 	right:0;
 	-webkit-transform: rotate(-45deg);
 	transform: rotate(-45deg);
 	background: rgba(117,93,86,.5);
 }
 
-	.scene-circle {
+	.figure-circle {
 		width: 50%;
 		height:50%;
 		position: absolute;

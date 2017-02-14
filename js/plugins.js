@@ -9,7 +9,6 @@
   			controls:false,
   			autoHover:true
   		});
-
-});
+	});
 
 })(jQuery);

@@ -120,14 +120,6 @@
 			.contact-data:nth-of-type(3) {
 				right:13.5%;
 			}
-
-
-		}
-
-		@media all and (orientation:portrait) and (max-width: 1050px) {
-			.github-link {
-				right: 6%;
-			}
 		}
 
 

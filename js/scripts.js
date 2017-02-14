@@ -1,21 +1,5 @@
 ;(function($) {
 
-// 	$(document).ready(function() {
-//
-//  		$('.jsScroll').on('click', function(event) {
-//
-//  		var target = $( $(this).attr('href') );
-//
-//  			if( target.length ) {
-//  				event.preventDefault();
-//  				$('html, body').animate({
-//  				scrollTop: target.offset().top
-//  			}, 700);
-//  		}
-// 		$(".popup_menu").slideUp(300);
-//  	});
-//
-// });
 //Loader animation
 	$('.loader').delay(1900).fadeOut(1500).css({'overflow':'visible'});
 	$(".loader-view").on("click", function() {
