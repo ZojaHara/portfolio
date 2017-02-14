@@ -12,8 +12,4 @@
 
 });
 
-   //Loader animation
-	$('#loader').delay(2200).fadeOut(1500).css({'overflow':'visible'});
-
-
 })(jQuery);

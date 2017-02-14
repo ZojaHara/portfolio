@@ -120,14 +120,50 @@ section {
 
 		.about-me, .loader, .popup_menu {
 			width: 100vw;
-			position: absolute;
 			z-index: 9999999;
-			background: rgba(0,0,0,.9);
+			background: rgba(0,0,0,.95);
 			font-size: 6vmin;
+		}
+
+		.about-me, .popup_menu {
+			position: absolute;
 		}
 
 		.popup_menu {
 			display: none;
+		}
+
+		.loader {
+			position: fixed;
+			top:0;
+		}
+
+		.main-page-loader {
+			display:none;
+		}
+
+
+		.load {
+			width:0;
+			white-space: nowrap;
+			overflow: hidden;
+			text-align: center;
+			margin: auto;
+			padding:7px;
+			color:rgb(57, 107, 136);
+			-webkit-animation:typing 2.7s linear;
+			animation:typing 2.7s linear;
+			-webkit-animation-delay: .2s;
+			animation-delay: .2s;
+			-webkit-animation-fill-mode: forwards;
+			animation-fill-mode: forwards;
+		}
+
+		/*Class to fix some IE issues*/
+		.p-flex {
+			display:flex;
+			align-items: center;
+			justify-content: center;
 		}
 
 		/*Section - About me*/
@@ -147,7 +183,6 @@ section {
 			animation-delay: .5s;
 			-webkit-animation-fill-mode: forwards;
 			animation-fill-mode: forwards;
-
 		}
 
 
@@ -770,28 +805,6 @@ section {
 
 							/*Projects section*/
 
-.load {
-	width:0;
-	white-space: nowrap;
-	overflow: hidden;
-	text-align: center;
-	margin: auto;
-	padding:7px;
-	color:rgb(57, 107, 136);
-	-webkit-animation:typing 3.3s;
-	animation:typing 3.3s;
-	-webkit-animation-delay: .2s;
-	animation-delay: .2s;
-	-webkit-animation-fill-mode: forwards;
-	animation-fill-mode: forwards;
-}
-
-/*Class to fix some IE issues*/
-.p-flex {
-	display:flex;
-	align-items: center;
-	justify-content: center;
-}
 
 .projects-body {
 	background:
