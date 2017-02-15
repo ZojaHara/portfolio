@@ -7,12 +7,12 @@
 	});
 
 	$(".close-cross, .presentation-contact, .menu-list").on("click", function() {
-		$(".about-me").slideUp(400);
-		$(".slide_menu").slideUp(700);
+		$(".intro").slideUp(400);
+		$(".slide_menu").fadeOut(500);
 	});
 
 	$(".menu-list-home").on("click", function() {
-		$(".about-me").slideDown(400);
+		$(".intro").slideDown(400);
 	});
 
 

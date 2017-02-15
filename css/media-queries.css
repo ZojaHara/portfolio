@@ -87,7 +87,7 @@
 
 
 					.menu-list {
-						font-size: 4.5vmin;
+						font-size: 4.7vmin;
 					}
 
 
@@ -95,21 +95,6 @@
 /*End of the title section figures params */
 
 
-/* Skills section modifications*/
-
-
-
-			.skills-arrow:nth-of-type(5) {
-				display: none;
-			}
-
-			.skills-arrow:nth-of-type(6){
-				display: none;
-			}
-
-			.skills-click {
-				top:48%;
-			}
 
 /*Contact section*/
 
