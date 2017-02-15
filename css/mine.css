@@ -395,8 +395,11 @@ section {
 				  position: absolute;
 				  -webkit-transform-origin: top;
 				  transform-origin: top;
-				  background: rgb(114,76,65);
+				  background: rgb(108, 88, 82);;
 				  border-radius: 50%;
+				}
+				.square-slide::before, .square-slide::after {
+					background: rgb(83, 120, 125);
 				}
 
 				.square::before {
@@ -423,10 +426,10 @@ section {
 				}
 
 				.triangle-home {
-					background: rgb(114,76,65);
+					background: rgb(108, 88, 82);
 				}
-				.triangle-slide {
-					background: rgb(117,93,86);
+				.triangle-slide{
+					background: rgb(83, 120, 125);
 				}
 
 				.triangle:nth-child(2) {
@@ -743,29 +746,16 @@ section {
 
 .projects-body {
 	background:
-	repeating-linear-gradient(
-		to top left,
-		transparent,
-		transparent 5em,
-		rgba(117,93,86,.5) 5em,
-		rgba(117,93,86,.5) 10em,
-		transparent 10em,
-		transparent 15em,
-		rgba(40,125,176,.5) 15em,
-		rgba(40,125,176,.5) 20em
-	),
-	repeating-linear-gradient(
-		to top right,
-		transparent,
-		transparent 5em,
-		rgba(150,150,219,.5) 5em,
-		rgba(150,150,219,.5) 10em,
-		transparent 10em,
-		transparent 15em,
-		rgba(150,178,193,.5) 15em,
-		rgba(150,178,193,.5) 20em
-	), black;
+		linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+		linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+		linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+		linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+		linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+		linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+		background-color: #131313;
+		background-size: 20px 20px;
 }
+/*Background pattern by Atle Mo (design), Sébastien Grosjean (code)*/
 
 
 	.slider-wrapper {
@@ -907,20 +897,21 @@ section {
 			z-index:7;
 		}
 
+		.data-centering {
+			width:100%;
+			text-align: center;
+		}
+
 		.contact-data:nth-of-type(1) {
-			left:17%;
 			top:0%;
 		}
 		.contact-data:nth-of-type(2) {
-			left:38%;
 			top:25%;
 		}
 		.contact-data:nth-of-type(3) {
-			left: 38%;
 			bottom: 25%;
 		}
 		.contact-data:nth-of-type(4) {
-			right:0%;
 			bottom:-2%;
 		}
 		.contact-data:nth-of-type(5) {
@@ -936,49 +927,54 @@ section {
 
 			/*Contact figure*/
 
-.figure {
-  width: 25vmin;
-  height: 25vmin;
-  position:absolute;
-  top:34%;
-  left:-6%;
-}
+			.figure {
+			  width: 25vmin;
+			  height: 25vmin;
+			  position:absolute;
+			  top:34%;
+			}
+			.figure-left {
+				left:-6%;
+			}
+			.figure-right {
+				right:-6%;
+			}
 
-.figure::before, .figure::after {
-	content:"";
-	display: block;
-	z-index: 6;
-	border:1px solid rgb(87, 81, 81);
-	position: absolute;
-	height: inherit;
-	width: 57.5%;
-	border-radius: 30px;
-	-webkit-transform-origin: bottom center;
-	transform-origin: bottom center;
-}
+			.figure::before, .figure::after {
+				content:"";
+				display: block;
+				z-index: 6;
+				border:1px solid rgb(87, 81, 81);
+				position: absolute;
+				height: inherit;
+				width: 57.5%;
+				border-radius: 30px;
+				-webkit-transform-origin: bottom center;
+				transform-origin: bottom center;
+			}
 
-.figure::before {
-	left:0;
-	-webkit-transform: rotate(45deg);
-	transform: rotate(45deg);
-	background: rgba(40,125,176,.5);
-}
+			.figure::before {
+				left:0;
+				-webkit-transform: rotate(45deg);
+				transform: rotate(45deg);
+				background: rgba(40,125,176,.5);
+			}
 
-.figure::after {
-	right:0;
-	-webkit-transform: rotate(-45deg);
-	transform: rotate(-45deg);
-	background: rgba(117,93,86,.5);
-}
+			.figure::after {
+				right:0;
+				-webkit-transform: rotate(-45deg);
+				transform: rotate(-45deg);
+				background: rgba(117,93,86,.5);
+			}
 
-	.figure-circle {
-		width: 50%;
-		height:50%;
-		position: absolute;
-		top:39.5%;
-		left:24%;
-		background: rgb(19,150,180);
-		border:1px solid rgb(87, 81, 81);
-		border-radius:50%;
-		z-index: 7;
-	}
+				.figure-circle {
+					width: 50%;
+					height:50%;
+					position: absolute;
+					top:39.5%;
+					left:24%;
+					background: rgb(19,150,180);
+					border:1px solid rgb(87, 81, 81);
+					border-radius:50%;
+					z-index: 7;
+			}

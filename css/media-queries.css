@@ -40,6 +40,13 @@
 				  width: 1.2%;
 				  height: 67.165vmin;
 				}
+				.square-slide::before, .square-slide::after {
+					background: rgb(117,93,86);
+				}
+
+				.triangle-slide{
+					background: rgb(117,93,86);
+				}
 
 				.triangle {
 				  width: 33.59264498vmin;
@@ -104,15 +111,17 @@
 			}
 
 /*Contact section*/
-
-			.figure {
-				display: none;
+			.figure::before {
+				background:transparent;
 			}
 
-			.contact-data:nth-of-type(3) {
-				right:-2.5%;
+			.figure::after {
+				background: transparent;
 			}
 
+				.figure-circle {
+					background: rgb(207, 168, 162);
+				}
 		}
 
 
