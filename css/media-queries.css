@@ -119,6 +119,9 @@
 			.figure::after {
 				background: transparent;
 			}
+			.figure::before{
+				background: transparent;
+			}
 
 				.figure-circle {
 					background: rgb(207, 168, 162);
