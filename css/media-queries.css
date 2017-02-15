@@ -90,11 +90,18 @@
 						font-size: 4.7vmin;
 					}
 
-
-
 /*End of the title section figures params */
 
 
+/* Skills section modifications*/
+
+			.skills-arrow:nth-of-type(5) {
+				display: none;
+			}
+
+			.skills-arrow:nth-of-type(6){
+				display: none;
+			}
 
 /*Contact section*/
 
@@ -103,8 +110,9 @@
 			}
 
 			.contact-data:nth-of-type(3) {
-				right:13.5%;
+				right:-2.5%;
 			}
+
 		}
 
 
