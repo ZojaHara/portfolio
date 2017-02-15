@@ -1,9 +1,10 @@
 /*General rules*/
 
 .hidden {
-	text-indent:-99999999999em;
 	height:0px;
 	width:0px;
+	white-space: nowrap;
+	color: transparent;
 }
 
 a {
@@ -101,8 +102,6 @@ section {
 			}
 		}
 
-
-
 		.hamburger::before, .hamburger::after {
 			content:"";
 			display: block;
@@ -116,26 +115,27 @@ section {
 			top:-2.5vmin;
 		}
 
-    /*Pop-up sections*/
+    /*Slide-up sections*/
 
-		.about-me, .loader, .popup_menu {
+		.transition-section {
 			width: 100vw;
 			z-index: 9999999;
 			background: rgba(0,0,0,.95);
 			font-size: 6vmin;
+			top:0;
+			left:0;
 		}
 
-		.about-me, .popup_menu {
+		.intro {
 			position: absolute;
 		}
 
-		.popup_menu {
+		.slide_menu {
 			display: none;
 		}
 
-		.loader {
+		.loader, .slide_menu {
 			position: fixed;
-			top:0;
 		}
 
 		.main-page-loader {
@@ -167,7 +167,6 @@ section {
 		}
 
 		/*Section - About me*/
-
 
 		.hello {
 			width:0;
@@ -281,7 +280,7 @@ section {
 			display: block;
 			width: 1vmin;
 			height: 7vmin;
-			background:rgb(177,255,200);;
+			background:rgb(248,241,212);
 			position: absolute;
 			left:45%;
 			top:5%;
@@ -396,8 +395,11 @@ section {
 				  position: absolute;
 				  -webkit-transform-origin: top;
 				  transform-origin: top;
-				  background: rgb(114,76,65);
+				  background: rgb(108, 88, 82);;
 				  border-radius: 50%;
+				}
+				.square-slide::before, .square-slide::after {
+					background: rgb(83, 120, 125);
 				}
 
 				.square::before {
@@ -420,8 +422,14 @@ section {
 				  -webkit-transform: rotate(45deg);
 				  transform: rotate(45deg);
 				  transition: all 1.3s;
-				  background: rgb(114,76,65);
 					overflow:hidden;
+				}
+
+				.triangle-home {
+					background: rgb(108, 88, 82);
+				}
+				.triangle-slide{
+					background: rgb(83, 120, 125);
 				}
 
 				.triangle:nth-child(2) {
@@ -464,7 +472,8 @@ section {
 
 					.menu-list {
 						display:block;
-						font-size: 3.5vmin;
+						font-size: 4vmin;
+						letter-spacing: 1.7px;
 						color:rgb(248,241,212);
 						text-decoration: none;
 						position: absolute;
@@ -480,143 +489,72 @@ section {
 					.menu-list-1 {
 						-webkit-transform: rotate(-45deg);
 						transform: rotate(-45deg);
+					}
+
+					.menu-list-home {
+						position: absolute;
+						top:24%;
+						left:8%;
+					}
+
+					.menu-list-slide {
 						top:25%;
-						left:0%;
+						left:9%;
 					}
 
 					.menu-list-2 {
 						-webkit-transform: rotate(-45deg);
 						transform: rotate(-45deg);
-						bottom:26%;
-						right:5%;
+						bottom:30%;
+						right:0%;
 					}
 
 					.menu-list-3 {
 						-webkit-transform: rotate(45deg);
 						transform: rotate(45deg);
-						top:60%;
-						right:50%;
+						top:62%;
+						right:43%;
 					}
 
 					.menu-list-4 {
 						-webkit-transform: rotate(45deg);
 						transform: rotate(45deg);
-						top:30%;
-						left:45%;
+						top:26%;
+						left:38%;
 					}
 
 
 						/*Menu animations*/
 
-					.triangle:nth-child(2):hover .menu-list-1 {
-						top:43%;
-						left:16%;
+					.triangle:nth-child(2):hover .menu-list-home {
+						top:41%;
+						left:28%;
+					}
+
+					.triangle:nth-child(2):hover .menu-list-slide {
+						top:42%;
+						left:26%;
 					}
 
 					.triangle:nth-child(3):hover .menu-list-2 {
-						bottom:45%;
-						right:22%;
+						bottom:42%;
+						right:13%;
 					}
 
 					.triangle:nth-child(4):hover .menu-list-3 {
 						-webkit-transform: rotate(-45deg);
 						transform: rotate(-45deg);
-						top:45%;
-						right:35%;
+						top:43%;
+						right:28%;
 					}
 
 					.triangle:nth-child(5):hover .menu-list-4 {
 						-webkit-transform: rotate(-45deg);
 						transform: rotate(-45deg);
 						top:42%;
-						left:25%;
+						left:20%;
 					}
 
-
-	/*Section pop-up menu*/
-
-
-	.arrow-popup {
-		width:30vmin;
-		height:40vmin;
-		position: absolute;
-		left:calc(50% - 15vmin);
-	}
-
-	.arrow-popup_blue {
-		top:7vmin;
-	}
-
-	.arrow-popup_orange {
-		bottom:7vmin;
-		-webkit-transform:rotate(180deg);
-		transform:rotate(180deg);
-	}
-
-	.arrow-popup_small {
-		bottom:7vmin;
-	}
-
-		.triangle-arrow, .triangle-arrow::before {
-			display: inline-block;
-			width: 0;
-			height: 0;
-			border-style: solid;
-
-			position: absolute;
-			cursor:pointer;
-		}
-
-		@keyframes there-and-back {
-			50% {
-				bottom:20%;
-			}
-			100% {
-				bottom:0;
-			}
-		}
-
-		.triangle-arrow {
-			bottom:0;
-			animation: there-and-back 2s linear infinite;
-		}
-
-		.triangle-arrow_big {
-			border-width: 0 10vmin 30vmin 10vmin;
-			left: calc(50% - 10vmin);
-		}
-
-		.triangle-arrow_small {
-			border-width: 0 7vmin 21vmin 7vmin;
-			left: calc(50% - 7vmin);
-		}
-
-		.triangle-arrow_big::before {
-			content: "";
-			border-width: 0 10vmin 10vmin 10vmin;
-			left: calc(50% - 10vmin);
-			top:0vmin;
-		}
-
-		.triangle-arrow_small::before {
-			content: "";
-			border-width: 0 7vmin 7vmin 7vmin;
-			left: calc(50% - 7vmin);
-			top:0vmin;
-		}
-
-		.triangle-arrow_blue, .triangle-arrow_blue::before {
-			border-color: transparent transparent rgb(39,82,196) transparent;
-		}
-
-		.triangle-arrow_orange, .triangle-arrow_orange::before {
-			border-color: transparent transparent rgb(204,131,94) transparent;
-		}
-
-
-
-
-	/*End of section pop-up menu*/
 
 
 	/*Section no 3 - Skills*/
@@ -808,29 +746,16 @@ section {
 
 .projects-body {
 	background:
-	repeating-linear-gradient(
-		to top left,
-		transparent,
-		transparent 5em,
-		rgba(117,93,86,.5) 5em,
-		rgba(117,93,86,.5) 10em,
-		transparent 10em,
-		transparent 15em,
-		rgba(40,125,176,.5) 15em,
-		rgba(40,125,176,.5) 20em
-	),
-	repeating-linear-gradient(
-		to top right,
-		transparent,
-		transparent 5em,
-		rgba(150,150,219,.5) 5em,
-		rgba(150,150,219,.5) 10em,
-		transparent 10em,
-		transparent 15em,
-		rgba(150,178,193,.5) 15em,
-		rgba(150,178,193,.5) 20em
-	), black;
+		linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+		linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+		linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+		linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+		linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+		linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+		background-color: #131313;
+		background-size: 20px 20px;
 }
+/*Background pattern by Atle Mo (design), Sébastien Grosjean (code)*/
 
 
 	.slider-wrapper {
@@ -965,80 +890,91 @@ section {
 
 
 		.contact-data {
-			font-size: 4vmin;
+			font-size: 4.1vmin;
+			letter-spacing: 3px;
 			color:rgb(69, 57, 54);
 			position: absolute;
 			z-index:7;
 		}
 
+		.data-centering {
+			width:100%;
+			text-align: center;
+		}
+
 		.contact-data:nth-of-type(1) {
-			left:25%;
-			top:12%;
+			top:0%;
 		}
 		.contact-data:nth-of-type(2) {
-			left:40%;
 			top:25%;
 		}
 		.contact-data:nth-of-type(3) {
-			right:-29%;
-			top:48%;
+			bottom: 25%;
 		}
 		.contact-data:nth-of-type(4) {
-			left:40%;
-			bottom:25%;
+			bottom:-2%;
 		}
 		.contact-data:nth-of-type(5) {
-			left:33%;
-			bottom:12%;
+			left:77%;
+			top:42%;
+		}
+		.contact-data:nth-of-type(6) {
+			left:66%;
+			top:53%;
 		}
 
 
 
 			/*Contact figure*/
 
-.figure {
-  width: 25vmin;
-  height: 25vmin;
-  position:absolute;
-  top:34%;
-  left:-6%;
-}
+			.figure {
+			  width: 25vmin;
+			  height: 25vmin;
+			  position:absolute;
+			  top:34%;
+			}
+			.figure-left {
+				left:-6%;
+			}
+			.figure-right {
+				right:-6%;
+			}
 
-.figure::before, .figure::after {
-	content:"";
-	display: block;
-	z-index: 6;
-	border:1px solid rgb(87, 81, 81);
-	position: absolute;
-	height: inherit;
-	width: 57.5%;
-	border-radius: 30px;
-	-webkit-transform-origin: bottom center;
-	transform-origin: bottom center;
-}
+			.figure::before, .figure::after {
+				content:"";
+				display: block;
+				z-index: 6;
+				border:1px solid rgb(87, 81, 81);
+				position: absolute;
+				height: inherit;
+				width: 57.5%;
+				border-radius: 30px;
+				-webkit-transform-origin: bottom center;
+				transform-origin: bottom center;
+			}
 
-.figure::before {
-	left:0;
-	-webkit-transform: rotate(45deg);
-	transform: rotate(45deg);
-	background: rgba(40,125,176,.5);
-}
+			.figure::before {
+				left:0;
+				-webkit-transform: rotate(45deg);
+				transform: rotate(45deg);
+				background: rgba(40,125,176,.5);
+			}
 
-.figure::after {
-	right:0;
-	-webkit-transform: rotate(-45deg);
-	transform: rotate(-45deg);
-	background: rgba(117,93,86,.5);
-}
+			.figure::after {
+				right:0;
+				-webkit-transform: rotate(-45deg);
+				transform: rotate(-45deg);
+				background: rgba(117,93,86,.5);
+			}
 
-	.figure-circle {
-		width: 50%;
-		height:50%;
-		position: absolute;
-		top:39.5%;
-		left:24%;
-		background: rgb(19,150,180);
-		border:1px solid rgb(87, 81, 81);
-		border-radius:50%;
-		z-index: 7;
-	}
+				.figure-circle {
+					width: 50%;
+					height:50%;
+					position: absolute;
+					top:39.5%;
+					left:24%;
+					background: rgb(19,150,180);
+					border:1px solid rgb(87, 81, 81);
+					border-radius:50%;
+					z-index: 7;
+			}

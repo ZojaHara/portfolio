@@ -40,6 +40,13 @@
 				  width: 1.2%;
 				  height: 67.165vmin;
 				}
+				.square-slide::before, .square-slide::after {
+					background: rgb(117,93,86);
+				}
+
+				.triangle-slide{
+					background: rgb(117,93,86);
+				}
 
 				.triangle {
 				  width: 33.59264498vmin;
@@ -87,17 +94,13 @@
 
 
 					.menu-list {
-						font-size: 4.5vmin;
+						font-size: 4.7vmin;
 					}
-
-
 
 /*End of the title section figures params */
 
 
 /* Skills section modifications*/
-
-
 
 			.skills-arrow:nth-of-type(5) {
 				display: none;
@@ -107,19 +110,19 @@
 				display: none;
 			}
 
-			.skills-click {
-				top:48%;
-			}
-
 /*Contact section*/
 
 			.figure {
-				display: none;
+				background:transparent;
 			}
 
-			.contact-data:nth-of-type(3) {
-				right:13.5%;
+			.figure::after {
+				background: transparent;
 			}
+
+				.figure-circle {
+					background: rgb(207, 168, 162);
+				}
 		}
 
 

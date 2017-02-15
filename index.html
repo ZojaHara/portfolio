@@ -5,7 +5,7 @@
 
 		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
 		Remove this if you use the .htaccess -->
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 		<title>ZojaHara FrontEnd</title>
 		<meta name="description" content="">
@@ -29,7 +29,39 @@
 
 	<body>
 
-		<section class="about-me">
+		<section class="transition-section slide_menu">
+			<h1 class="hidden">Zoja Hara junior front-end developer</h1>
+			<div class="close-cross"></div>
+
+			<div class="container container-portrait">
+
+				<div class="square square-slide"></div>
+
+				<div class="triangle triangle-slide">
+					<a href="#title-section" class="menu-list menu-list-1 menu-list-slide">Home</a>
+				</div>
+				<div class="triangle triangle-slide">
+					<a href="#contact" class="menu-list menu-list-2 loader-view">Contact</a>
+				</div>
+				<div class="triangle triangle-slide">
+					<a href="#skills" class="menu-list menu-list-3 loader-view">Skills</a>
+				</div>
+				<div class="triangle triangle-slide">
+					<a href="projects.html" target="_blank" class="menu-list menu-list-4">Works</a>
+				</div>
+
+			</div>
+		</section>
+
+		<section id="loader" class="transition-section loader main-page-loader section-flex">
+			<h2 class="hidden">Next section!</h2>
+			<p class="load p-flex">
+						Here you are!
+			</p>
+
+		</section>
+
+		<section id="intro" class="intro transition-section">
 
 			<div class="close-cross"></div>
 
@@ -50,7 +82,7 @@
 
 		<section id="title-section" class="section-flex">
 
-			<h1 class="hidden">Zoja Hara - Front-end Developer</h1>
+			<h2 class="hidden">Zoja Hara - Main menu</h2>
 
 			<div class="corner"></div>
 			<div class="corner"></div>
@@ -66,32 +98,19 @@
 
 				<div class="square"></div>
 
-				<div class="triangle">
-					<a href="" class="menu-list menu-list-1">About me</a>
+				<div class="triangle triangle-home">
+					<a href="#intro" class="menu-list menu-list-1 menu-list-home">Intro</a>
 				</div>
-				<div class="triangle">
+				<div class="triangle triangle-home">
 					<a href="#contact" class="menu-list menu-list-2 loader-view">Contact</a>
 				</div>
-				<div class="triangle">
+				<div class="triangle triangle-home">
 					<a href="#skills" class="menu-list menu-list-3 loader-view">Skills</a>
 				</div>
-				<div class="triangle">
+				<div class="triangle triangle-home">
 					<a href="projects.html" target="_blank" class="menu-list menu-list-4">Works</a>
 				</div>
 
-			</div>
-
-		</section>
-
-		<section class="popup_menu">
-			<div class="close-cross"></div>
-
-			<div class="arrow-popup arrow-popup_blue">
-				<a href="#title-section" class="triangle-arrow triangle-arrow_big triangle-arrow_blue loader-view"></a>
-			</div>
-
-			<div class="arrow-popup arrow-popup_orange">
-				<a href="#contact" class="triangle-arrow triangle-arrow_big triangle-arrow_orange"></a>
 			</div>
 
 		</section>
@@ -141,21 +160,8 @@
 
 		</section>
 
-		<section class="popup_menu">
-			<div class="close-cross"></div>
-
-			<div class="arrow-popup arrow-popup_blue">
-				<a href="#title-section" class="triangle-arrow triangle-arrow_big triangle-arrow_blue loader-view"></a>
-			</div>
-
-			<div class="arrow-popup arrow-popup_small">
-				<a href="#skills" class="triangle-arrow triangle-arrow_small triangle-arrow_orange"></a>
-			</div>
-
-		</section>
-
 		<section id="contact" class="contact section-flex">
-			<h2 class="hidden">Zoja Hara - Contact</h1>
+			<h2 class="hidden">Zoja Hara - Contact</h2>
 
 			<div class="corner"></div>
 			<div class="corner">
@@ -168,26 +174,24 @@
 
 			<div class="container container-contact-color">
 
-				<div class="figure">
+				<div class="figure figure-left">
 					<div class="figure-circle"></div>
  				</div>
 
- 				<p class="contact-data">+48 660 184 694</p>
- 				<p class="contact-data">Phone</p>
- 				<p class="contact-data">k.harasimiuk@gmail.com</p>
- 				<p class="contact-data">Skype</p>
- 				<p class="contact-data">zoja.harasim</p>
+ 				<p class="contact-data data-centering">+48 660 184 694</p>
+ 				<p class="contact-data data-centering">Phone</p>
+				<p class="contact-data data-centering">E-mail</p>
+ 				<p class="contact-data data-centering">k.harasimiuk@gmail.com</p>
+ 				<!-- <p class="contact-data">Skype</p>
+ 				<p class="contact-data">zoja.harasim</p> -->
+
+				<div class="figure figure-right">
+					<div class="figure-circle"></div>
+				</div>
 
 			</div>
 		</section>
 
-		<section id="loader" class="loader main-page-loader section-flex">
-
-			<p class="load p-flex">
-						Here you are!
-			</p>
-
-		</section>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>

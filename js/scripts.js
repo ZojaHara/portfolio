@@ -6,14 +6,18 @@
 		$(".main-page-loader").css("display", "flex").delay(1800).fadeOut(700).css({'overflow':'visible'});
 	});
 
-	$(".close-cross, .presentation-contact, .arrow-popup").on("click", function() {
-		$(".about-me").slideUp(400);
-		$(".popup_menu").slideUp(700);
+	$(".close-cross, .presentation-contact, .menu-list").on("click", function() {
+		$(".intro").slideUp(400);
+		$(".slide_menu").fadeOut(500);
+	});
+
+	$(".menu-list-home").on("click", function() {
+		$(".intro").slideDown(400);
 	});
 
 
 	$(".hamburger-container").on("click", function() {
-		$(".popup_menu").slideDown(1000);
+		$(".slide_menu").slideDown(700).css("display","flex");
 	});
 
 	//Cricles animation
