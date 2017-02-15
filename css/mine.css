@@ -118,18 +118,18 @@ section {
 
     /*Pop-up sections*/
 
-		.about-me, .loader, .popup_menu {
+		.about-me, .loader, .slide_menu {
 			width: 100vw;
 			z-index: 9999999;
 			background: rgba(0,0,0,.95);
 			font-size: 6vmin;
 		}
 
-		.about-me, .popup_menu {
+		.about-me, .slide_menu {
 			position: absolute;
 		}
 
-		.popup_menu {
+		.slide_menu {
 			display: none;
 		}
 
@@ -532,91 +532,6 @@ section {
 						left:25%;
 					}
 
-
-	/*Section pop-up menu*/
-
-
-	.arrow-popup {
-		width:30vmin;
-		height:40vmin;
-		position: absolute;
-		left:calc(50% - 15vmin);
-	}
-
-	.arrow-popup_blue {
-		top:7vmin;
-	}
-
-	.arrow-popup_orange {
-		bottom:7vmin;
-		-webkit-transform:rotate(180deg);
-		transform:rotate(180deg);
-	}
-
-	.arrow-popup_small {
-		bottom:7vmin;
-	}
-
-		.triangle-arrow, .triangle-arrow::before {
-			display: inline-block;
-			width: 0;
-			height: 0;
-			border-style: solid;
-
-			position: absolute;
-			cursor:pointer;
-		}
-
-		@keyframes there-and-back {
-			50% {
-				bottom:20%;
-			}
-			100% {
-				bottom:0;
-			}
-		}
-
-		.triangle-arrow {
-			bottom:0;
-			animation: there-and-back 2s linear infinite;
-		}
-
-		.triangle-arrow_big {
-			border-width: 0 10vmin 30vmin 10vmin;
-			left: calc(50% - 10vmin);
-		}
-
-		.triangle-arrow_small {
-			border-width: 0 7vmin 21vmin 7vmin;
-			left: calc(50% - 7vmin);
-		}
-
-		.triangle-arrow_big::before {
-			content: "";
-			border-width: 0 10vmin 10vmin 10vmin;
-			left: calc(50% - 10vmin);
-			top:0vmin;
-		}
-
-		.triangle-arrow_small::before {
-			content: "";
-			border-width: 0 7vmin 7vmin 7vmin;
-			left: calc(50% - 7vmin);
-			top:0vmin;
-		}
-
-		.triangle-arrow_blue, .triangle-arrow_blue::before {
-			border-color: transparent transparent rgb(39,82,196) transparent;
-		}
-
-		.triangle-arrow_orange, .triangle-arrow_orange::before {
-			border-color: transparent transparent rgb(204,131,94) transparent;
-		}
-
-
-
-
-	/*End of section pop-up menu*/
 
 
 	/*Section no 3 - Skills*/
