@@ -11,6 +11,10 @@
 		$(".slide_menu").slideUp(700);
 	});
 
+	$(".menu-list-home").on("click", function() {
+		$(".about-me").slideDown(400);
+	});
+
 
 	$(".hamburger-container").on("click", function() {
 		$(".slide_menu").slideDown(700).css("display","flex");

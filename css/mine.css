@@ -116,7 +116,7 @@ section {
 			top:-2.5vmin;
 		}
 
-    /*Pop-up sections*/
+    /*Slide-up sections*/
 
 		.about-me, .loader, .slide_menu {
 			width: 100vw;
@@ -125,7 +125,7 @@ section {
 			font-size: 6vmin;
 		}
 
-		.about-me, .slide_menu {
+		.about-me {
 			position: absolute;
 		}
 
@@ -133,7 +133,7 @@ section {
 			display: none;
 		}
 
-		.loader {
+		.loader, .slide_menu {
 			position: fixed;
 			top:0;
 		}
@@ -281,7 +281,7 @@ section {
 			display: block;
 			width: 1vmin;
 			height: 7vmin;
-			background:rgb(177,255,200);;
+			background:rgb(248,241,212);
 			position: absolute;
 			left:45%;
 			top:5%;
@@ -480,8 +480,17 @@ section {
 					.menu-list-1 {
 						-webkit-transform: rotate(-45deg);
 						transform: rotate(-45deg);
+					}
+
+					.menu-list-home {
+						position: absolute;
+						top:22%;
+						left:10%;
+					}
+
+					.menu-list-slide {
 						top:25%;
-						left:0%;
+						left:9%;
 					}
 
 					.menu-list-2 {
@@ -508,9 +517,14 @@ section {
 
 						/*Menu animations*/
 
-					.triangle:nth-child(2):hover .menu-list-1 {
+					.triangle:nth-child(2):hover .menu-list-home {
 						top:43%;
-						left:16%;
+						left:27%;
+					}
+
+					.triangle:nth-child(2):hover .menu-list-slide {
+						top:45%;
+						left:32%;
 					}
 
 					.triangle:nth-child(3):hover .menu-list-2 {
