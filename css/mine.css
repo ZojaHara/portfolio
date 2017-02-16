@@ -46,28 +46,28 @@ section {
 			z-index: 4;
 		}
 		.corner:nth-child(2) {
-			border-color: rgba(117,93,86,.7) transparent transparent transparent;
+			border-color: rgb(167, 145, 138) transparent transparent transparent;
 			border-width: 35vmin 35vmin 0 0;
 			top:0;
 			left:0;
 		}
 
 		.corner:nth-child(3) {
-			border-color: transparent rgba(117,93,86,.7) transparent transparent;
+			border-color: transparent rgb(167, 145, 138) transparent transparent;
 			border-width: 0 35vmin 35vmin 0;
 			top:0;
 			right:0;
 		}
 
 		.corner:nth-child(4) {
-			border-color: transparent transparent transparent rgba(117,93,86,.7);
+			border-color: transparent transparent transparent rgb(167, 145, 138);
 			border-width: 35vmin 0 0 35vmin;
 			bottom:0;
 			left:0;
 		}
 
 		.corner:nth-child(5) {
-			border-color: transparent transparent rgba(117,93,86,.7) transparent;
+			border-color: transparent transparent rgb(167, 145, 138) transparent;
 			border-width: 0 0 35vmin 35vmin;
 			bottom:0;
 			right:0;
@@ -91,11 +91,20 @@ section {
 			height:1.5vmin;
 			background: rgb(255,240,255);
 			border-radius:10px;
-			animation: hamburger-skills 6s infinite linear;
+			animation: hamburger-skills 5s infinite linear;
+		}
+
+		@-webkit-keyframes hamburger-skills {
+			50% {
+				background: rgb(184,205,205);
+			}
+			100% {
+				background: rgb(255,240,255);
+			}
 		}
 		@keyframes hamburger-skills {
 			50% {
-				background: rgb(240,210,210);
+				background: rgb(184,205,205);
 			}
 			100% {
 				background: rgb(255,240,255);
@@ -130,11 +139,11 @@ section {
 			position: absolute;
 		}
 
-		.slide_menu {
+		.slide_menu, .tip-section {
 			display: none;
 		}
 
-		.loader, .slide_menu {
+		.loader, .slide_menu, .tip-section {
 			position: fixed;
 		}
 
@@ -150,7 +159,7 @@ section {
 			text-align: center;
 			margin: auto;
 			padding:7px;
-			color:rgb(57, 107, 136);
+			color:rgb(49, 131, 179);
 			-webkit-animation:typing 2.7s linear;
 			animation:typing 2.7s linear;
 			-webkit-animation-delay: .2s;
@@ -229,12 +238,12 @@ section {
 
 		.presentation li {
 			padding:1px;
-			color:rgb(204,131,94);
+			color:rgb(207, 168, 162);
 		}
 
 		.presentation li:nth-of-type(2n) {
 			text-align: right;
-			color:rgb(39,82,196);
+			color:rgb(49, 131, 179);
 		}
 
 		.presentation li:last-of-type {
@@ -262,9 +271,6 @@ section {
 				-webkit-animation-fill-mode: forwards;
 				animation-fill-mode: forwards;
 			}
-
-
-
 
 		.close-cross {
 			width: 8vmin;
@@ -768,18 +774,51 @@ section {
 		}
 
 /*Projects arrow */
-		.arrow-container {
+		.navigation-container {
 			width: 12vmin;
 			height: 12vmin;
 			background: rgb(0, 60, 88);
 			position: absolute;
 			top:2%;
-			left:2%;
-			border:3px solid white;
+			border:3px solid rgb(255,255,255);
 			overflow: hidden;
 		}
 
-		.arrow-container a {
+		.arrow-container {
+			left:2%;
+		}
+
+		.question-mark-container {
+			right:2%;
+			cursor: pointer;
+		}
+			.question-mark {
+				font-size: 10vmin;
+				text-align: center;
+				padding-top:5%;
+				color:rgb(255,255,255);
+			}
+		.projects-tip {
+			width: 80%;
+			margin: 25vmin auto 0;
+			font-size: 5vmin;
+			line-height: 7vmin;
+			letter-spacing: 3px;
+			color:rgb(49, 131, 179);
+			list-style:square;
+			list-style-position: inside;
+
+			height:0;
+			overflow: hidden;
+			-webkit-animation:unroll 4s linaer;
+			animation:unroll 4s linear;
+			-webkit-animation-delay: 2s;
+			animation-delay: 0.6s;
+			-webkit-animation-fill-mode: forwards;
+			animation-fill-mode: forwards;
+		}
+
+		.navigation-container a {
 		 	display: block;
 		 	width: inherit;
 		 	height:inherit;
