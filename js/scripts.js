@@ -2,8 +2,9 @@
 
 //Loader animations
 	$('.loader').delay(1900).fadeOut(1500).css({'overflow':'visible'});
-	$(".loader-view").on("click", function() {
+	$(".loader-view").on("click", function(e) {
 		$(".main-page-loader").css("display", "flex").delay(1800).fadeOut(700).css({'overflow':'visible'});
+		
 	});
 
 	$(".close-cross, .presentation-contact, .menu-list").on("click", function() {

@@ -159,7 +159,7 @@ section {
 			text-align: center;
 			margin: auto;
 			padding:7px;
-			color:rgb(49, 131, 179);
+			color:rgb(0, 173, 201);;
 			-webkit-animation:typing 2.7s linear;
 			animation:typing 2.7s linear;
 			-webkit-animation-delay: .2s;
@@ -243,7 +243,7 @@ section {
 
 		.presentation li:nth-of-type(2n) {
 			text-align: right;
-			color:rgb(49, 131, 179);
+			color:rgb(0, 173, 201);;
 		}
 
 		.presentation li:last-of-type {
@@ -795,7 +795,7 @@ section {
 			.question-mark {
 				font-size: 10vmin;
 				text-align: center;
-				padding-top:5%;
+				padding-top:10%;
 				color:rgb(255,255,255);
 			}
 		.projects-tip {
@@ -804,7 +804,7 @@ section {
 			font-size: 5vmin;
 			line-height: 7vmin;
 			letter-spacing: 3px;
-			color:rgb(49, 131, 179);
+			color:rgb(0, 173, 201);
 			list-style:square;
 			list-style-position: inside;
 
