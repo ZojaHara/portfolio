@@ -139,6 +139,9 @@ section {
 		.slide_menu, .tip-section, .main-page-loader {
 			display: none;
 		}
+		.intro {
+			position: absolute;
+		}
 
 
 		.load {
