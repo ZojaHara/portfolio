@@ -44,6 +44,11 @@
 					background: rgb(117,93,86);
 				}
 
+				  .question-container {
+						top:17.75vmin;
+						left:17.75vmin;
+					}
+
 				.triangle-slide{
 					background: rgb(117,93,86);
 				}
