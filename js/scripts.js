@@ -8,7 +8,7 @@
 
 	$(".close-cross, .presentation-contact, .menu-list").on("click", function() {
 		$(".intro").slideUp(300);
-		$(".slide_menu").fadeOut(500);
+		$(".slide_menu").fadeOut(400);
 	});
 
 	$(".menu-list-home").on("click", function() {

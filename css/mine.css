@@ -127,7 +127,6 @@ section {
     /*Slide-up sections*/
 
 		.transition-section {
-			position: fixed;
 			width: 100vw;
 			z-index: 9999999;
 			background: rgba(0,0,0,.95);
@@ -138,6 +137,7 @@ section {
 
 		.slide_menu, .tip-section, .main-page-loader {
 			display: none;
+			position: fixed;
 		}
 		.intro {
 			position: absolute;
