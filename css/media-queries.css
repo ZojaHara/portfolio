@@ -144,6 +144,10 @@
 
 
 	@media all and (max-width:900px) {
+/*
+		.projects-item {
+			width:80%;
+		}*/
 			.close-cross {
 	    width: 12vmin;
 	    height: 12vmin;
@@ -154,17 +158,3 @@
 			height:12vmin;
 		}
 	}
-
-/*Bx-slider*/
-
-		@media all and (orientation: landscape) and (max-width: 750px) {
-			.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
-				bottom: -35px !important;
-			}
-		}
-
-		@media all and (min-width: 1281px) {
-			.bxslider-position img {
-				min-width:100%;
-			}
-		}
