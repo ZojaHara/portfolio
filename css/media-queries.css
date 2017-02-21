@@ -143,11 +143,10 @@
 		}
 
 
-	@media all and (max-width:900px) {
-/*
-		.projects-item {
-			width:80%;
-		}*/
+	@media all and (max-width:1000px) {
+			.projects-item {
+				margin-bottom:10px;
+			}
 			.close-cross {
 	    width: 12vmin;
 	    height: 12vmin;
