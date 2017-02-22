@@ -947,6 +947,10 @@ section {
 								position: absolute;
 								background:rgba(0,0,0, .5);
 								font-size: 27px;
+								line-height: 27px;
+								width:27px;
+								height:27px;
+								text-align: center;
 								border-right: .4px solid rgb(255,255,255);
 								border-bottom: .4px solid rgb(255,255,255);
 							}
@@ -956,6 +960,7 @@ section {
 								display: block;
 								color:rgb(255,255,255);
 								font-size: 35px;
+								line-height:35px;
 								text-align: center;
 								position: absolute;
 								bottom:0;
