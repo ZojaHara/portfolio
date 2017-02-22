@@ -139,6 +139,9 @@ section {
 			display: none;
 			position: fixed;
 		}
+		.projects-loader {
+			position: fixed;
+		}
 		.intro {
 			position: absolute;
 		}
