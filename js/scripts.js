@@ -21,6 +21,22 @@
 
 	// Projects
 
+	$(".sublist-options li:first-of-type").on("click", function() {
+		$(".page").css("display", "block");
+		$(".anim").css("display", "none");
+		$(".tip-section").fadeOut(1000);
+	});
+	$(".sublist-options li:nth-of-type(2)").on("click", function() {
+		$(".page").css("display", "none");
+		$(".anim").css("display", "block");
+		$(".tip-section").fadeOut(1000);
+	});
+	$(".sublist-options li:last-of-type").on("click", function() {
+		$(".page").css("display", "block");
+		$(".anim").css("display", "block");
+		$(".tip-section").fadeOut(1000);
+	});
+
 	$(".question-mark-container, .question-container").on("click", function() {
 		$(".tip-section").slideDown((500));
 	});

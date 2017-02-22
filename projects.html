@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -28,22 +29,35 @@
 
 	<body class="projects-body">
 
-		<section class="transition-section loader section-flex">
+		<!-- <section class="transition-section loader section-flex">
 			<h2 class="hidden">My projects</h2>
 
 			<p class="load p-flex">
 			      My projects:
 			</p>
 
-		</section>
-		
+		</section> -->
+
 		<section class="transition-section tip-section">
 			<h2 class="hidden">Instructions</h2>
 			<div class="close-cross close-cross-tip"></div>
 			<ul class="projects-tip">
-				<li>Touch or hover over the slider</li>
-				<li>Left side: link to page</li>
-				<li>Right side: link to source code</li>
+				<li>Touch or hover over the slider <span class="small-tip">(left side: link to page / right side: link to source code)</span></li>
+				<li>Choose:
+					<ul class="sublist sublist-options">
+						<li>Only pages</li>
+						<li>Only animations</li>
+						<li>Both</li>
+					</ul>
+				</li>
+				<li>Technologies used:
+					<ul class="sublist sublist-tech">
+						<li>JavaScript + jQuery</li>
+						<li>Sass (no. 2, 4, 3(menu))</li>
+						<li>Bootstrap grid (no. 1)</li>
+						<li>Flexbox (no. 3, 6)</li>
+					</ul>
+				</li>
 			</ul>
 		</section>
 
@@ -59,56 +73,52 @@
 				<p class="question-mark question-mark-2">?</p>
 			</div>
 
-			<div class="slider-wrapper section-flex">
-				<div class="projects-slider p-flex">
-					<ul class="bxslider">
-  						<li class="bxslider-position">
-  							<div class="projects-links">
-  								<a href="https://zojahara.github.io/Computers-Hunter" target="_blank"class="slider-links page-link"> Page </a>
-  								<a href="https://github.com/ZojaHara/Computers-Hunter" target="_blank" class="slider-links github-link">GitHub</a>
+			<div class="projects-wrapper">
+				<ul class="projects-list section-flex">
+  						<li class="projects-item portfolio-img-1 page">
+								<p class="order-number">1.</p>
+  							<div class="portfolio-links">
+  								<a href="https://zojahara.github.io/Computers-Hunter" target="_blank" class="links page-link">Page</a>
+  								<a href="https://github.com/ZojaHara/Computers-Hunter" target="_blank" class="links github-link">GitHub</a>
   							</div>
-  							<img alt="Computers Hunter" src="pic/zpage_5.jpg" />
   						</li>
-  						<li class="bxslider-position">
-  							<div class="projects-links">
-  								<a href="https://zojahara.github.io/Project-no-1" target="_blank" class="slider-links page-link"> Page </a>
-  								<a href="https://github.com/ZojaHara/Project-no-1" target="_blank" class="slider-links github-link">GitHub</a>
+  						<li class="projects-item portfolio-img-2 anim">
+								<p class="order-number">2.</p>
+  							<div class="portfolio-links">
+  								<a href="https://zojahara.github.io/Project-no-1" target="_blank" class="links page-link">Page</a>
+  								<a href="https://github.com/ZojaHara/Project-no-1" target="_blank" class="links github-link">GitHub</a>
   							</div>
-  							<img alt="moving circles" src="pic/project_1.jpg" />
   						</li>
-							<li class="bxslider-position">
-								<div class="projects-links">
-									<a href="https://zojahara.github.io/portfolio" target="_blank" class="slider-links page-link"> Page </a>
-									<a href="https://github.com/ZojaHara/portfolio" target="_blank" class="slider-links github-link">GitHub</a>
+							<li class="projects-item portfolio-img-3 page">
+								<p class="order-number">3.</p>
+								<div class="portfolio-links">
+									<a href="https://zojahara.github.io/portfolio" target="_blank" class="links page-link">Page</a>
+									<a href="https://github.com/ZojaHara/portfolio" target="_blank" class="links github-link">GitHub</a>
 								</div>
-								<img alt="my portfolio" src="pic/portfolio.jpg" />
 							</li>
-  						<li class="bxslider-position">
-  							<div class="projects-links">
-  								<a href="https://zojahara.github.io/Project-no-2" target="_blank" class="slider-links page-link"> Page </a>
-  								<a href="https://github.com/ZojaHara/Project-no-2" target="_blank" class="slider-links github-link">GitHub</a>
+  						<li class="projects-item portfolio-img-4 anim">
+								<p class="order-number">4.</p>
+  							<div class="portfolio-links">
+  								<a href="https://zojahara.github.io/Project-no-2" target="_blank" class="links page-link">Page</a>
+  								<a href="https://github.com/ZojaHara/Project-no-2" target="_blank" class="links github-link">GitHub</a>
   							</div>
-  							<img alt="little guy animation" src="pic/project_2a.jpg" />
   						</li>
-  						<li class="bxslider-position">
-  							<div class="projects-links">
-  								<a href="https://zojahara.github.io/Project-no-3" target="_blank"class="slider-links page-link"> Page </a>
-  								<a href="https://github.com/ZojaHara/Project-no-3" target="_blank" class="slider-links github-link">GitHub</a>
+  						<li class="projects-item portfolio-img-5 anim">
+								<p class="order-number">5.</p>
+  							<div class="portfolio-links">
+  								<a href="https://zojahara.github.io/Project-no-3" target="_blank" class="links page-link">Page</a>
+  								<a href="https://github.com/ZojaHara/Project-no-3" target="_blank" class="links github-link">GitHub</a>
   							</div>
-  							<img alt="waves circles" src="pic/project_3.jpg" />
   						</li>
-  						<li class="bxslider-position">
-  							<div class="projects-links">
-  								<a href="https://zojahara.github.io/page3/index.html" target="_blank" class="slider-links page-link"> Page </a>
-  								<a href="https://github.com/ZojaHara/page3" target="_blank" class="slider-links github-link">GitHub</a>
+  						<li class="projects-item portfolio-img-6 page">
+								<p class="order-number">6.</p>
+  							<div class="portfolio-links">
+  								<a href="https://zojahara.github.io/page3/index.html" target="_blank" class="links page-link">Page</a>
+  								<a href="https://github.com/ZojaHara/page3" target="_blank" class="links github-link">GitHub</a>
   							</div>
-  							<img alt="English Skype" src="pic/zpage_3.jpg" />
   						</li>
-
-					</ul>
-				</div>
+				</ul>
 			</div>
-
 		</section>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
