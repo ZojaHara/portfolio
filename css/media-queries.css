@@ -133,19 +133,21 @@
 				}
 
 
-				/*Prijects*/
+				/*Projects*/
 				.load {
 					color: rgb(207, 168, 162);
 				}
-				.projects-tip {
-					color:rgb(207, 168, 162);
-				}
-		}
+			}
 
 
-	@media all and (max-width:1000px) {
+	@media all and (max-width:1025px) {
+
+			.sublist-options li {
+				padding-bottom:3%;
+				font-size: 5.5vmin;
+			}
 			.projects-item {
-				margin-bottom:10px;
+				margin-bottom:15px;
 			}
 			.close-cross {
 	    width: 12vmin;
@@ -155,5 +157,28 @@
 		.close-cross::before, .close-cross::after {
 			width:1.5vmin;
 			height:12vmin;
+		}
+	}
+
+	@media all and (max-width:500px) {
+		.projects-list {
+			width:80%;
+		}
+			.projects-wrapper {
+				margin-top:22%;
+			}
+				.projects-item {
+					width: 230.6px;
+					height:138.5px;
+				}
+				.links {
+					font-size:25px;
+					line-height: 25px;
+				}
+	}
+
+	@media all and (orientation:portrait) and (max-width:768px) {
+		.sublist-options li {
+			padding:4% 0;
 		}
 	}
