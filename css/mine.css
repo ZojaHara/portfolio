@@ -764,7 +764,7 @@ section {
 
 .projects-tip {
 	width: 80%;
-	margin: 1.5vmin auto 0;
+	margin: 4vmin auto 0;
 	font-size: 5vmin;
 	line-height: 7vmin;
 	letter-spacing: 3px;
@@ -780,9 +780,7 @@ section {
 	-webkit-animation-fill-mode: forwards;
 	animation-fill-mode: forwards;
 }
-	.small-tip {
-		font-size: 3.5vmin;
-	}
+
 	.sublist {
 		color: rgb(207, 168, 162);
 		list-style:disc;
@@ -812,7 +810,7 @@ section {
 	.projects-wrapper {
 		width: 100%;
 		height: 88%;
-		margin-top:8%;
+		margin-top:7%;
 	}
 
 /*Projects arrow */
@@ -896,7 +894,6 @@ section {
 					flex-direction: row;
 					justify-content:space-around;
 					align-items: center;
-					font-size: 25px;
 					color:rgb(255,255,255);
 					list-style-position: inside;
 				}
@@ -905,6 +902,12 @@ section {
 						width: 375.5px;
 						height: 198.3px;
 						border:5px solid rgb(255, 255, 255);
+						overflow: hidden;
+						transition: transform .5s linear;
+						margin-bottom:15px;
+					}
+					.projects-item:hover {
+						transform:scale(1.05);
 					}
 
 						.portfolio-img-1 {
@@ -940,36 +943,44 @@ section {
 							background: rgba(0, 0, 0,.7);
 							opacity: .6;
 						}
-						.portfolio-links:hover .links{
-							opacity: 1;
-						}
 							.order-number {
 								position: absolute;
-								top:3px;
-								left:3px;
+								background:rgba(0,0,0, .5);
+								font-size: 27px;
+								border-right: .4px solid rgb(255,255,255);
+								border-bottom: .4px solid rgb(255,255,255);
 							}
 							.links {
 								width:50%;
 								height:20%;
 								display: block;
-								background:rgb(0,0,0);
-								border-top:2px solid rgb(255,255,255);
 								color:rgb(255,255,255);
 								font-size: 35px;
 								text-align: center;
 								position: absolute;
 								bottom:0;
 								padding:1%;
-								opacity:0;
+								opacity:1;
 								transition: opacity .7s linear;
 							}
 
 							.page-link {
 								left:0;
 							}
+							.page-link::before {
+								content:"";
+								position: absolute;
+								top:-200px;
+								bottom:-200px;
+								left:-200px;
+								right:-200px;
+							}
 							.github-link {
 								right:0;
+								background:rgb(0,0,0);
+								border-top:2px solid rgb(255,255,255);
 								border-left: 2px solid rgb(255,255,255);
+								z-index: 5;
 							}
 
 
@@ -1029,8 +1040,6 @@ section {
 			left:66%;
 			top:53%;
 		}
-
-
 
 			/*Contact figure*/
 

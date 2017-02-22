@@ -146,9 +146,6 @@
 				padding-bottom:3%;
 				font-size: 5.5vmin;
 			}
-			.projects-item {
-				margin-bottom:15px;
-			}
 			.close-cross {
 	    width: 12vmin;
 	    height: 12vmin;
@@ -181,4 +178,12 @@
 		.sublist-options li {
 			padding:4% 0;
 		}
+	}
+	@media all and (min-width:768px) and (max-width:1125px) {
+		.projects-wrapper {
+			margin-top:16%;
+		}
+			.projects-list {
+				width:85%;
+			}
 	}
