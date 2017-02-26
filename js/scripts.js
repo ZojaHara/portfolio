@@ -37,7 +37,7 @@
 		$(".tip-section").fadeOut(1000);
 	});
 
-	$(".question-mark-container, .question-container").on("click", function() {
+	$(".question-container").on("click", function() {
 		$(".tip-section").slideDown((500));
 	});
 
