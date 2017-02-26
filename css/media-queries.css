@@ -1,8 +1,4 @@
 		@media all and (orientation: portrait) {
-
-			body {
-				background: rgb(207, 168, 162);
-			}
 			.hello {
 				margin-top:25vmin;
 			}
@@ -20,10 +16,6 @@
 
 			.container-title-color {
 			  background: transparent;
-			}
-
-			.container-title-color::before, .container-title-color::after {
-			  background: #e086d4;
 			}
 
 			.container-portrait::before, .container-portrait::after {
@@ -103,23 +95,17 @@
 
 /* Skills section modifications*/
 
-			.skills-arrow:nth-of-type(5) {
+			.skills-arrow {
 				display: none;
 			}
-
-			.skills-arrow:nth-of-type(6){
-				display: none;
-			}
-
 				/*Projects*/
 				.load {
-					color: rgb(207, 168, 162);
+					color: rgb(248,241,212);
 				}
 			}
 
 
 	@media all and (max-width:1025px) {
-
 			.sublist-options li {
 				padding-bottom:3%;
 				font-size: 5.5vmin;
@@ -133,6 +119,7 @@
 			width:1.5vmin;
 			height:12vmin;
 		}
+
 	}
 
 	@media all and (max-width:500px) {
