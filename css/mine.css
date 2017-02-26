@@ -939,9 +939,9 @@ section {
 								position: absolute;
 								background:rgba(0,0,0, .5);
 								font-size: 26px;
+								line-height: 26px;
 								width:28px;
 								height:28px;
-								padding-top: 1%;
 								text-align: center;
 								border-right: .4px solid rgb(255,255,255);
 								border-bottom: .4px solid rgb(255,255,255);
