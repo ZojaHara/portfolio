@@ -14,7 +14,6 @@ a {
 html {overflow:hidden;}
 
 body {
-	background:rgb(184,205,205);
 	position: relative;
 	font-size: 16px;
 	font-family: 'Orbitron', sans-serif;
@@ -34,6 +33,19 @@ section {
   	display: flex;
 }
 
+.background {
+	background:
+		linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+		linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+		linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+		linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+		linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+		linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+		background-color: #131313;
+		background-size: 20px 20px;
+}
+/*Background pattern by Atle Mo (design), Sébastien Grosjean (code)*/
+
 
 			/*Corners*/
 
@@ -46,28 +58,28 @@ section {
 			z-index: 4;
 		}
 		.corner:nth-child(2) {
-			border-color: rgb(167, 145, 138) transparent transparent transparent;
+			border-color: rgb(137, 116, 109) transparent transparent transparent;
 			border-width: 35vmin 35vmin 0 0;
 			top:0;
 			left:0;
 		}
 
 		.corner:nth-child(3) {
-			border-color: transparent rgb(167, 145, 138) transparent transparent;
+			border-color: transparent rgb(137, 116, 109) transparent transparent;
 			border-width: 0 35vmin 35vmin 0;
 			top:0;
 			right:0;
 		}
 
 		.corner:nth-child(4) {
-			border-color: transparent transparent transparent rgb(167, 145, 138);
+			border-color: transparent transparent transparent rgb(137, 116, 109);
 			border-width: 35vmin 0 0 35vmin;
 			bottom:0;
 			left:0;
 		}
 
 		.corner:nth-child(5) {
-			border-color: transparent transparent rgb(167, 145, 138) transparent;
+			border-color: transparent transparent rgb(137, 116, 109) transparent;
 			border-width: 0 0 35vmin 35vmin;
 			bottom:0;
 			right:0;
@@ -352,12 +364,12 @@ section {
 			}
 
 			.container-title-color {
-			  background: rgb(200,240,250);
+			  background: rgb(33, 65, 74);
 			}
 
 			.container-title-color::before, .container-title-color::after {
 			  /*background: #e086d4;*/
-				background: rgb(156,131,141);
+				background: rgb(51,32,40);
 			}
 
 			.container::before, .container::after {
@@ -396,7 +408,7 @@ section {
 				  position: absolute;
 				  -webkit-transform-origin: top;
 				  transform-origin: top;
-				  background: rgb(108, 88, 82);;
+				  background: rgb(81, 74, 72);
 				  border-radius: 50%;
 				}
 				.square-slide::before, .square-slide::after {
@@ -429,7 +441,7 @@ section {
 							position: absolute;
 							top:12.75vmin;
 							left:12.75vmin;
-							background:rgb(108, 88, 82);
+							background:rgb(81, 74, 72);
 							color:rgb(248,241,212);
 							z-index:9;
 						}
@@ -446,7 +458,7 @@ section {
 				}
 
 				.triangle-home {
-					background: rgb(108, 88, 82);
+					background: rgb(81, 74, 72);
 				}
 				.triangle-slide{
 					background: rgb(83, 120, 125);
@@ -792,21 +804,6 @@ section {
 			cursor:pointer;
 			text-decoration: underline;
 		}
-
-
-.projects-body {
-	background:
-		linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
-		linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
-		linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
-		linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
-		linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
-		linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
-		background-color: #131313;
-		background-size: 20px 20px;
-}
-/*Background pattern by Atle Mo (design), Sébastien Grosjean (code)*/
-
 
 	.projects-wrapper {
 		width: 100%;
