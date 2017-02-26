@@ -19,7 +19,7 @@
 			}
 
 			.container-title-color {
-			  background: rgb(207, 168, 162);
+			  background: transparent;
 			}
 
 			.container-title-color::before, .container-title-color::after {
@@ -29,7 +29,6 @@
 			.container-portrait::before, .container-portrait::after {
 			  display: none;
 			}
-
 
 				.square {
 				  width: 47.5vmin;
@@ -96,13 +95,11 @@
 				    z-index: 7;
 				}
 
-
 					.menu-list {
 						font-size: 4.7vmin;
 					}
 
 /*End of the title section figures params */
-
 
 /* Skills section modifications*/
 
@@ -113,24 +110,6 @@
 			.skills-arrow:nth-of-type(6){
 				display: none;
 			}
-
-/*Contact section*/
-
-			.figure {
-				background:transparent;
-			}
-
-			.figure::after {
-				background: transparent;
-			}
-			.figure::before{
-				background: transparent;
-			}
-
-				.figure-circle {
-					background: rgb(207, 168, 162);
-				}
-
 
 				/*Projects*/
 				.load {
@@ -148,7 +127,7 @@
 			.close-cross {
 	    width: 12vmin;
 	    height: 12vmin;
-		}
+			}
 
 		.close-cross::before, .close-cross::after {
 			width:1.5vmin;
