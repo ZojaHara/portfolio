@@ -96,16 +96,18 @@
         }
 
         .triangle:nth-child(2):hover {
-          top:-(side($width1 / 4));
+          // top:-(side($width1 / 4));
+          z-index: 7;
         }
 
 
         .triangle:nth-child(3) {
           bottom:side($width1 / 9.6);
-          left:($width1 / 2 ) - side($width1 / 4);
+          left:($width1 / 2 ) - side($width1 / 4.02);
         }
         .triangle:nth-child(3):hover {
-          bottom:-(side($width1 / 4));
+          // bottom:-(side($width1 / 4.02));
+          z-index: 7;
         }
 
         .triangle:nth-child(4) {
