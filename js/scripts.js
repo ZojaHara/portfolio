@@ -3,7 +3,9 @@
 //Loader animations
 	$('.loader').delay(1900).fadeOut(1500).css({'overflow':'visible'});
 	$(".loader-view").on("click", function(e) {
-		$(".main-page-loader").css("display", "flex").delay(1800).fadeOut(700).css({'overflow':'visible'});
+		var text = $(this).data("content");
+		$(".main-page-loader").css("display", "flex").delay(1800).fadeOut(900).css({'overflow':'visible'});
+		$(".load").text(text);
 	});
 
 	$(".close-cross, .presentation-contact, .menu-list").on("click", function() {
@@ -20,11 +22,6 @@
 	});
 
 	// Projects
-	$.fn.shuffleItems.defaults = {
-		animDuration:1000,
-		className:"tip-section"
-	};
-	$(".sublist-options").shuffleItems();
 
 	$(".question-container").on("click", function() {
 		$(".tip-section").slideDown((500));

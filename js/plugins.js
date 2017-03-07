@@ -35,10 +35,9 @@ return this.each(function() {
 
 };
 
-$.fn.shuffleItems.defaults = {
-	animDuration:1000,
-	className:"tip-section"
-};
-$(".sublist-options").shuffleItems();
-
+	$.fn.shuffleItems.defaults = {
+		animDuration:1000,
+		className:"tip-section"
+	};
+	$(".sublist-options").shuffleItems();
 })(jQuery, window, document);
