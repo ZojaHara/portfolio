@@ -20,22 +20,11 @@
 	});
 
 	// Projects
-
-	$(".sublist-options li:first-of-type").on("click", function() {
-		$(".page").css("display", "block");
-		$(".anim").css("display", "none");
-		$(".tip-section").fadeOut(1000);
-	});
-	$(".sublist-options li:nth-of-type(2)").on("click", function() {
-		$(".page").css("display", "none");
-		$(".anim").css("display", "block");
-		$(".tip-section").fadeOut(1000);
-	});
-	$(".sublist-options li:last-of-type").on("click", function() {
-		$(".page").css("display", "block");
-		$(".anim").css("display", "block");
-		$(".tip-section").fadeOut(1000);
-	});
+	$.fn.shuffleItems.defaults = {
+		animDuration:1000,
+		className:"tip-section"
+	};
+	$(".sublist-options").shuffleItems();
 
 	$(".question-container").on("click", function() {
 		$(".tip-section").slideDown((500));
