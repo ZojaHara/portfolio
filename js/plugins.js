@@ -40,4 +40,5 @@ return this.each(function() {
 		className:"tip-section"
 	};
 	$(".sublist-options").shuffleItems();
+
 })(jQuery, window, document);
