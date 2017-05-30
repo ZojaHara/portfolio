@@ -92,6 +92,7 @@ section {
 			right:-30vmin;
 			position: absolute;
 			cursor: pointer;
+			z-index:9999999;
 		}
 
 		.hamburger, .hamburger::before, .hamburger::after {
@@ -138,7 +139,7 @@ section {
 
 		.transition-section {
 			width: 100vw;
-			z-index: 9999999;
+			z-index: 999;
 			background: rgba(0,0,0,.95);
 			font-size: 6vmin;
 			top:0;
@@ -838,7 +839,7 @@ section {
 		 	height:inherit;
 		 	position: absolute;
 		 	left:0;
-		 	z-index: 99999999999;
+		 	z-index: 99999;
 		 }
 
 		 .projects-arrow {
