@@ -183,21 +183,38 @@ section {
 		/*Section - About me*/
 
 		.hello {
-			width:0;
+			width:100%;
 			margin:10vmin 5vmin 5vmin 0vmin;
 			padding:8px 1px;
 			white-space: nowrap;
 			overflow: hidden;
 			text-align: center;
 			color:rgb(177,255,200);
-			-webkit-animation:typing 10s;
-			animation:typing 10s;
-			-webkit-animation-delay: .5s;
-			animation-delay: .5s;
-			-webkit-animation-fill-mode: forwards;
-			animation-fill-mode: forwards;
 		}
+			.hello-heading {
+				width:100%;
+				-webkit-transform:translateX(-100%);
+				transform:translateX(-100%);
+				-webkit-animation:typing-1 10s;
+				animation:typing-1 10s;
+				-webkit-animation-fill-mode: forwards;
+				animation-fill-mode: forwards;
+			}
 
+
+			@-webkit-keyframes typing-1{
+				100% {
+					-webkit-transform:translateX(0%);
+					transform:translateX(0%);
+				}
+			}
+
+			@keyframes typing-1{
+				100% {
+					-webkit-transform:translateX(0%);
+					transform:translateX(0%);
+				}
+			}
 
 		@-webkit-keyframes typing{
 			from {
@@ -218,15 +235,21 @@ section {
 		}
 
 		.presentation {
-			height:0;
 			margin: 10vmin 5vmin 0vmin 5vmin;
 			overflow: hidden;
-			-webkit-animation:unroll 7s linaer;
-			animation:unroll 7s linear;
-			-webkit-animation-delay: 4s;
-			animation-delay: 4s;
-			-webkit-animation-fill-mode: forwards;
-			animation-fill-mode: forwards;
+		}
+		@-webkit-keyframes unroll-1 {
+			to {
+				-webkit-transform:translateY(0%);
+				transform:translateY(0%);
+			}
+		}
+
+		@keyframes unroll-1 {
+			to {
+				-webkit-transform:translateY(0%);
+				transform:translateY(0%);
+			}
 		}
 
 		@-webkit-keyframes unroll {
@@ -241,8 +264,55 @@ section {
 			}
 		}
 
+			.presentation-item {
+				height:100%;
+				overflow: hidden;
+			}
+				.presentation-item p{
+					padding:.1em 0;
+					-webkit-transform:translateY(-120%);
+					transform:translateY(-120%);
+					-webkit-animation:unroll-1 .5s linear;
+					animation:unroll-1 .5s linear;
+					-webkit-animation-fill-mode: forwards;
+					animation-fill-mode: forwards;
+				}
+				.presentation-item_1 p{
+					-webkit-animation-delay: 3.5s;
+					animation-delay: 3.5s;
+				}
+				.presentation-item_2 p{
+					-webkit-animation-delay: 4s;
+					animation-delay: 4s;
+				}
+				.presentation-item_3 p{
+					-webkit-animation-delay: 4.5s;
+					animation-delay: 4.5s;
+				}
+				.presentation-item_4 p{
+					-webkit-animation-delay: 5s;
+					animation-delay: 5s;
+				}
+				.presentation-item_5 p{
+					-webkit-animation-delay: 5.5s;
+					animation-delay: 5.5s;
+				}
+				.presentation-item_6 p{
+					-webkit-animation-delay: 6s;
+					animation-delay: 6s;
+				}
+				.presentation-item_contact p{
+					-webkit-transform:translateX(-100%);
+					transform:translateX(-100%);
+					-webkit-animation:typing-1 2s;
+					animation:typing-1 2s;
+					-webkit-animation-fill-mode: forwards;
+					animation-fill-mode: forwards;
+					-webkit-animation-delay: 6.5s;
+					animation-delay: 6.5s;
+				}
+
 		.presentation li {
-			padding:1px;
 			color:rgb(207, 168, 162);
 		}
 
