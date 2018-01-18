@@ -195,8 +195,8 @@ section {
 				width:100%;
 				-webkit-transform:translateX(-100%);
 				transform:translateX(-100%);
-				-webkit-animation:typing-1 10s;
-				animation:typing-1 10s;
+				-webkit-animation:typing-1 8s;
+				animation:typing-1 8s;
 				-webkit-animation-fill-mode: forwards;
 				animation-fill-mode: forwards;
 			}
@@ -308,8 +308,8 @@ section {
 					animation:typing-1 2s;
 					-webkit-animation-fill-mode: forwards;
 					animation-fill-mode: forwards;
-					-webkit-animation-delay: 6.5s;
-					animation-delay: 6.5s;
+					-webkit-animation-delay: 5s;
+					animation-delay: 5s;
 				}
 
 		.presentation li {
@@ -341,8 +341,8 @@ section {
 				background:rgb(177,255,200);
 				-webkit-animation:typing 2s;
 				animation:typing 2s;
-				-webkit-animation-delay:8.5s;
-				animation-delay:8.5s;
+				-webkit-animation-delay:6s;
+				animation-delay:6s;
 				-webkit-animation-fill-mode: forwards;
 				animation-fill-mode: forwards;
 			}
